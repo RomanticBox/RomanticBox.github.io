@@ -1,0 +1,10 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* 사용자 정의 스타일 */
+$primary-color: #2c3e50;
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+}
