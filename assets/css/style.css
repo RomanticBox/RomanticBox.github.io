@@ -4,7 +4,22 @@
 @import "{{ site.theme }}";
 
 /* 사용자 정의 스타일 */
-$primary-color: #2c3e50;
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+}
+
 body {
   font-family: 'Nanum Gothic', sans-serif;
+  line-height: 1.6;
+}
+
+.page-header {
+  background: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+}
+
+.main-content h1, 
+.main-content h2, 
+.main-content h3 {
+  color: var(--primary-color);
 }
