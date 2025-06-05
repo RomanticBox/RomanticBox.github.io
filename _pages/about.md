@@ -26,9 +26,30 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+## 👋 Hi, I'm Sunghyun Lee
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm a machine learning researcher with a deep interest in **multimodal AI**, **AI for media**, and **AI for linguistics**.  
+Currently, my research focuses on the intersection of **sound symbolism** and AI, aiming to understand how models capture and generate human-like phonosemantic patterns across languages.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Currently updating my website!
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Beyond that, I explore the **creativity of AI** — how machines can generate novel ideas, expressions, or artifacts that go beyond human expectations, and how we might evaluate such output meaningfully.
+
+---
+
+## 🧠 Research Interests
+- Multimodal understanding and generation
+- Language + sound symbolism modeling
+- Human–AI interaction and creativity
+- Phonetic/semantic alignment across languages
+- Storytelling and media generation by AI
+
+---
+
+## ✨ Motto
+> “The future belongs to those who can hear it coming.”  
+> — David Bowie
+
+---
+
+Feel free to check out my [publications](/publications/) and recent [blog posts](/blog/), or get in touch through the icons below!
