@@ -10,6 +10,7 @@ Beyond that, I explore the **creativity of AI** — how machines can generate no
 ---
 
 ## 🧠 Research Interests
+
 - Multimodal understanding and generation
 - Language + sound symbolism modeling
 - Human–AI interaction and creativity
@@ -19,6 +20,7 @@ Beyond that, I explore the **creativity of AI** — how machines can generate no
 ---
 
 ## ✨ Motto
+
 > “The future belongs to those who can hear it coming.”  
 > — David Bowie
 

@@ -27,6 +27,7 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+
 ## 👋 Hi, I'm Sunghyun Lee
 
 I'm a machine learning researcher with a deep interest in **multimodal AI**, **AI for media**, and **AI for linguistics**.  
@@ -39,6 +40,7 @@ Beyond that, I explore the **creativity of AI** — how machines can generate no
 ---
 
 ## 🧠 Research Interests
+
 - Multimodal understanding and generation
 - Language + sound symbolism modeling
 - Human–AI interaction and creativity
@@ -48,6 +50,7 @@ Beyond that, I explore the **creativity of AI** — how machines can generate no
 ---
 
 ## ✨ Motto
+
 > "The future belongs to those who can hear it coming."  
 > — David Bowie
 

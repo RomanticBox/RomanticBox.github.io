@@ -50,7 +50,7 @@
   contents:
     - title: '<a href="https://github.com/winston1214/nonverbal-conversation">Nonverbal Conversation</a>'
       year: 2025
-      description: 
+      description:
         - Open-source toolkit for analyzing nonverbal conversation in neural language models
         - Supports multiple languages and provides visualization tools
         - Used by researchers worldwide for phonetic-semantic analysis
@@ -102,4 +102,3 @@
     - <u>Hobbies:</u> Exercising at the gym, reading books, watching movies, writing diary, posting at my blog
     - <u>Languages:</u> Interested in finding similarities and differences between languages
     - <u>Technology:</u> HCI, Interactive Storytelling, AI-assisted Creativity Tools, Affective Computing, and Computational Social Science
-

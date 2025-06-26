@@ -194,13 +194,7 @@
     {
       "name": "Multimodal AI",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Multimodal AI",
-        "AI with Linguistics",
-        "3D-Language Learning",
-        "Multilingual AI",
-        ""
-      ]
+      "keywords": ["Multimodal AI", "AI with Linguistics", "3D-Language Learning", "Multilingual AI", ""]
     }
   ],
   "references": [
