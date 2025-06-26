@@ -2,13 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.yonsei.ac.kr/'>Yonsei University</a>. AI Researcher. AI Creativity Explorer.
+subtitle: "[Yonsei University](https://www.yonsei.ac.kr/). AI Researcher. AI Creativity Explorer."
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
+  more_info: |
     <p>Department of Computer Science</p>
     <p>Yonsei University</p>
     <p>Seoul, Republic of Korea</p>
@@ -20,7 +20,7 @@ social: true # includes social icons at the bottom of the page
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 5 # leave blank to include all the news in the _news folder
 
 latest_posts:
   enabled: true
