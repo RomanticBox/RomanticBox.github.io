@@ -49,13 +49,13 @@
   type: time_table
   contents:
     - title: <a href="https://github.com/winston1214/nonverbal-conversation">Nonverbal Conversation</a>
-      year: 2025-2025
+      year: 2025
       description: 
         - Open-source toolkit for analyzing nonverbal conversation in neural language models
         - Supports multiple languages and provides visualization tools
         - Used by researchers worldwide for phonetic-semantic analysis
     - title: <a href="https://github.com/k1064190/MAVL">MAVL: A Multilingual Audio-Video Lyrics Dataset for Animated Song Translation</a>
-      year: 2025-2025
+      year: 2025
       description:
         - The first research on multilingual and multimodal lyrics translation
         - Proposes a new benchmark dataset for multilingual and multimodal lyrics translation
