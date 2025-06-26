@@ -74,7 +74,7 @@ layout: default
     {% include citation.liquid %}
   {% endif %}
 
-  {% if page.related_publications %}
+  {% if page.related_publications and site.scholar.cited and site.scholar.cited.size > 0 %}
     <h2>References</h2>
     <div class="publications">
       {% bibliography --group_by none --cited_in_order %}
