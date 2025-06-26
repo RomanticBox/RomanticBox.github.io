@@ -173,7 +173,7 @@ ninja.data = [{
         title: 'Instagram',
         section: 'Socials',
         handler: () => {
-          window.open("https://instagram.com/", "_blank");
+          window.open("https://instagram.com/deux_saint.s", "_blank");
         },
       },{
         id: 'social-kaggle',
@@ -188,6 +188,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://leetcode.com/u/romanticBox/", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/leesunghyun", "_blank");
         },
       },{
         id: 'social-rss',
@@ -209,13 +216,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://twitter.com/iseonghyeo95180", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.romanticbox.github.io/", "_blank");
         },
       },{
       id: 'light-theme',
