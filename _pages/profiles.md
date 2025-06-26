@@ -17,12 +17,4 @@ profiles:
       <p>Yonsei University Engineering Park 412C</p>
       <p>50 shinchon-street seodaemungu</p>
       <p>Seoul</p>
-  - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>Yonsei University Engineering Park 412C</p>
-      <p>50 shinchon-street seodaemungu</p>
-      <p>Seoul</p>
 ---
