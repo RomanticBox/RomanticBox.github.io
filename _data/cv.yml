@@ -20,6 +20,7 @@
         - Double Major Coursework: Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Data Structures & Algorithms
         - Research Focus: Pragmatic AI and Digital Humanities, Computational Creativity
         - Thesis: "Cross-linguistic Sound Symbolism in Neural Language Models"
+
 - title: Experience
   type: time_table
   contents:
@@ -37,24 +38,23 @@
         - Patented a new method for real-time energy data management
         - Developed and deployed machine learning models for real-time data processing
         - Contributed to research on multimodal AI applications
-    - title: Intership
+    - title: Internship
       institution: MindForge, Seoul, Republic of Korea
       year: 2023.12 - 2024.02.
       description:
         - Real-time 3D hand pose estimation model for HCI
         - Paper survey for 3D hand pose estimation
 
-
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/winston1214/nonverbal-conversation">Nonverbal Conversation</a>
+    - title: '<a href=\"https://github.com/winston1214/nonverbal-conversation\">Nonverbal Conversation</a>'
       year: 2025
       description: 
         - Open-source toolkit for analyzing nonverbal conversation in neural language models
         - Supports multiple languages and provides visualization tools
         - Used by researchers worldwide for phonetic-semantic analysis
-    - title: <a href="https://github.com/k1064190/MAVL">MAVL: A Multilingual Audio-Video Lyrics Dataset for Animated Song Translation</a>
+    - title: '<a href=\"https://github.com/k1064190/MAVL\">MAVL: A Multilingual Audio-Video Lyrics Dataset for Animated Song Translation</a>'
       year: 2025
       description:
         - The first research on multilingual and multimodal lyrics translation
