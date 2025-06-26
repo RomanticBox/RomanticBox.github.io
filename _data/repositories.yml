@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - RomanticBox
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - winston1214/nonverbal-conversation
+  - k1064190/MAVL
+  - RomanticBox/text2storyboard
+  - MinJeonging/Spot-On

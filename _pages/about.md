@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: "[Yonsei University](https://www.yonsei.ac.kr/). AI Researcher. AI Creativity Explorer."
+subtitle: "Yonsei University AI Researcher. AI Creativity Explorer."
 
 profile:
   align: right
@@ -42,16 +42,16 @@ Beyond that, I explore the **creativity of AI** — how machines can generate no
 ## 🧠 Research Interests
 
 - Multimodal understanding and generation
-- Language + sound symbolism modeling
 - Human–AI interaction and creativity
-- Phonetic/semantic alignment across languages
+- Pragmatics-based human interaction understanding and generation
 - Storytelling and media generation by AI
+- Computational artistry and creativity
 
 ---
 
 ## ✨ Motto
 
-> "The future belongs to those who can hear it coming."  
+> "The future belongs to those who can hear it coming."
 > — David Bowie
 
 ---

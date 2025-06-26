@@ -51,12 +51,14 @@
     - title: '<a href="https://github.com/winston1214/nonverbal-conversation">Nonverbal Conversation</a>'
       year: 2025
       description:
+        - 25' ACL main conference
         - Open-source toolkit for analyzing nonverbal conversation in neural language models
         - Supports multiple languages and provides visualization tools
         - Used by researchers worldwide for phonetic-semantic analysis
     - title: '<a href="https://github.com/k1064190/MAVL">MAVL: A Multilingual Audio-Video Lyrics Dataset for Animated Song Translation</a>'
       year: 2025
       description:
+        - Submitted at ACL Rolling Review May 2025 (Under Review)
         - The first research on multilingual and multimodal lyrics translation
         - Proposes a new benchmark dataset for multilingual and multimodal lyrics translation
         - Provides new evaluation metrics for the quality of the translation
