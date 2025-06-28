@@ -102,44 +102,44 @@ ninja.data = [{
             },},{id: "news-welcome-to-my-personal-website-i-m-excited-to-share-my-research-and-experiences-in-ai-and-machine-learning",
           title: 'Welcome to my personal website! I’m excited to share my research and experiences...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-storyweaver-text-to-image-generative-model-for-cartoonists",
+          title: 'StoryWeaver Text-to-Image generative model for cartoonists',
+          description: "A Text-to-Image model that generates storyboard-style images from scripts for webtoon artists, presented at YBIGTA conference",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-2nd-wrtn-generative-ai-ideathon",
+          title: '2nd Wrtn Generative AI Ideathon',
+          description: "Portfolio generation service with active interaction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-patent-for-energy-management-system",
+          title: 'Patent for energy management system',
+          description: "Analyzing energy, managing production, and detecting anomaly",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+            },},{id: "projects-얼을-담아-ureul-dama",
+          title: '얼을 담아 (Ureul Dama)',
+          description: "Generating snapshot style image according to Korean landmarks",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+            },},{id: "projects-spot-on",
+          title: 'Spot-On',
+          description: "Framework for proposing commodities various modalities as input",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+            },},{id: "projects-filtering-insulting-words-in-game-communities",
+          title: 'Filtering insulting words in game communities',
+          description: "Filtering harmful expressions using KoBERT",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
+            },},{id: "projects-stewart",
+          title: 'Stewart',
+          description: "Shopping Assistance Agent",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
+            },},{id: "projects-chat-082",
+          title: 'Chat-082',
+          description: "Computer Recommendation system with conversational models",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
             },},{id: "projects-project-9",
@@ -216,6 +216,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://twitter.com/iseonghyeo95180", "_blank");
+        },
+      },{
+        id: 'social-custom_social',
+        title: 'Custom_social',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://blog.naver.com/romantic_box", "_blank");
         },
       },{
       id: 'light-theme',
