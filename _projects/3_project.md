@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
+title: Patent for energy management system
+description: Analyzing energy, managing production, and detecting anomaly
 img: assets/img/7.jpg
 redirect: https://unsplash.com
 importance: 3
-category: work
+category: patent
 ---
 
 Every project has a beautiful feature showcase page.

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 4
-description: another without an image
+title: 얼을 담아 (Ureul Dama)
+description: Generating snapshot style image according to Korean landmarks
 img:
 importance: 3
-category: fun
+category: work
 ---
 
 Every project has a beautiful feature showcase page.

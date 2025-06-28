@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
+title: Filtering insulting words in game communities
+description: Filtering harmful expressions using KoBERT
 img:
 importance: 4
-category: fun
+category: work
 ---
 
 Every project has a beautiful feature showcase page.
