@@ -13,4 +13,5 @@ collection: books
 > This inspires the people to think the skills and attitudes of language we must stick to. Language is, with a bit of overstatement, the world itself for human. It determines the way human think and interact and understand the culture of a society.
 >
 > -- 신지영, 신지영 교수의 언어감수성 수업 (2024)
+
 ## Books that I am reading, have read, or will read

@@ -12,7 +12,6 @@ related_publications: true
 {% include github_card.liquid repo="YBIGTA/24th-conference-text2storyboard" %}
 {% endraw %}
 
-
 ## Project Overview
 
 StoryWeaver is an innovative Text-to-Image generative model designed specifically for webtoon artists. The system takes a script as input and generates storyboard-style images, providing a powerful tool for visual storytelling in the digital comics industry.
@@ -80,6 +79,7 @@ This project addresses a significant need in the webtoon industry, where artists
 ## Future Development
 
 The project continues to evolve with plans for:
+
 - Enhanced style customization options
 - Multi-panel generation capabilities
 - Integration with popular webtoon creation tools
