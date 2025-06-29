@@ -51,6 +51,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
+        },{id: "nav-academic-transcripts",
+          title: "Academic Transcripts",
+          description: "Download academic transcripts in Korean and English versions",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/transcripts/";
+          },
         },{id: "nav-people",
           title: "people",
           description: "members of the lab or group",
@@ -94,11 +101,16 @@ ninja.data = [{
             window.location.href = "/blog/2025/plotly/";
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
+      },{id: "books-no-exit",
+          title: 'No Exit',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
+              window.location.href = "/books/no_exit/";
+            },},{id: "books-신지영-교수의-언어감수성-수업",
+          title: '신지영 교수의 언어감수성 수업',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/shin_language/";
             },},{id: "news-welcome-to-my-personal-website-i-m-excited-to-share-my-research-and-experiences-in-ai-and-machine-learning",
           title: 'Welcome to my personal website! I’m excited to share my research and experiences...',
           description: "",
@@ -134,16 +146,16 @@ ninja.data = [{
               window.location.href = "/projects/6_project/";
             },},{id: "projects-stewart",
           title: 'Stewart',
-          description: "Shopping Assistance Agent",
+          description: "AI-Powered Intelligent Shopping Assistant with Conversational Interface",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
             },},{id: "projects-chat-082",
           title: 'Chat-082',
-          description: "Computer Recommendation system with conversational models",
+          description: "AI-Powered Desktop PC Recommendation System with Conversational Interface",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
+            },},{id: "projects-9-project",
+          title: '9_project',
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
