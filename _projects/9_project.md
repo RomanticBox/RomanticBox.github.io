@@ -1,80 +1,72 @@
 ---
 layout: page
-title: Null
-description: another project with an image 🎉
+title: DoClick - Korean Graduate Student Administrative Task Management Platform
+description: A web-based platform designed to streamline administrative workflows for Korean graduate students, enabling them to focus on research
 img: assets/img/6.jpg
 importance: 4
-category: fun
+category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Project Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+DoClick is a comprehensive web application specifically developed to address the administrative burden faced by Korean graduate students in research institutions. The platform streamlines administrative task management, allowing researchers to maintain focus on their core academic pursuits while efficiently handling institutional requirements.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+**[🌐 Live Demo: https://doclick.netlify.app/](https://doclick.netlify.app/)**
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+_The platform is fully implemented in Korean to serve the specific needs of Korean graduate students and academic institutions._
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Problem Analysis & Solution Design
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+### Problem Identification
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+Korean graduate students frequently encounter administrative tasks that interrupt their research workflow, leading to decreased productivity and increased stress. These tasks often involve complex forwarding chains, unclear procedures, and time-sensitive deadlines that require immediate attention regardless of research priorities. The platform specifically addresses the unique administrative challenges faced within Korean academic institutions, including department-specific requirements and institutional workflows.
 
-{% raw %}
+### Technical Solution Architecture
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+The platform implements a systematic approach to administrative task management through:
 
-{% endraw %}
+- **Email Integration**: Automated retrieval and parsing of administrative emails from institutional accounts
+- **Task Categorization**: Intelligent classification of administrative requests with priority assessment
+- **Workflow Management**: Streamlined forwarding and delegation processes with complete audit trails
+- **Progress Tracking**: Real-time monitoring of task completion status and deadline management
+- **Korean Language Support**: Full Korean interface optimized for Korean academic terminology and procedures
+
+## Technical Implementation
+
+### Frontend Development
+
+Built using modern web technologies including HTML5, CSS3, and JavaScript to create an intuitive user interface that prioritizes usability and accessibility. The responsive design ensures compatibility across various devices and screen sizes, with complete Korean language localization.
+
+### Backend Integration
+
+Developed email processing capabilities to automatically extract and categorize administrative communications, implementing intelligent filtering to focus on actionable items while maintaining data privacy and security. The system is specifically designed to handle Korean institutional email formats and administrative procedures.
+
+### User Experience Design
+
+Created a dashboard interface that provides immediate visibility into pending administrative tasks, with features including:
+
+- Real-time task counters and notifications
+- Detailed task information with procedural guidance in Korean
+- Sample document templates for common Korean administrative submissions
+- Streamlined forwarding workflow with justification tracking
+- "Do Not Disturb" mode for focused research periods
+
+## Market Research & Validation
+
+### Hypothesis Testing
+
+Conducted systematic market research using the XYZ hypothesis framework to validate market demand specifically within the Korean graduate student community. The research involved:
+
+- Survey distribution across Korean graduate student communities
+- User engagement analysis through website analytics
+- Feedback collection from potential users and stakeholders in Korean academic institutions
+
+### Results & Insights
+
+The validation process revealed significant interest in administrative workflow optimization among Korean graduate students, with positive feedback from both students and faculty members. The research demonstrated clear market need for solutions that reduce administrative overhead in Korean academic environments.
+
+## Business Impact & Future Development
+
+The project demonstrates strong potential for institutional adoption within Korean universities, with initial feedback indicating interest from administrative leadership. The platform's modular architecture allows for easy customization to meet specific Korean institutional requirements while maintaining core functionality.
+
+This project showcases expertise in full-stack web development, user experience design, market research methodologies, and business analysis - all critical skills for technology-driven solutions in academic and professional environments. The Korean language implementation and cultural adaptation demonstrate internationalization capabilities and understanding of local market needs.

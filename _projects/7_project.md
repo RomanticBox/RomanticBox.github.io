@@ -4,7 +4,7 @@ title: Stewart
 description: AI-Powered Intelligent Shopping Assistant with Conversational Interface
 img: assets/img/4.jpg
 importance: 1
-category: work
+category: Academic-to-Product Pilot
 related_publications: true
 ---
 
