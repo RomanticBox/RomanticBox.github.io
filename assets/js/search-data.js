@@ -154,9 +154,9 @@ ninja.data = [{
           description: "AI-Powered Desktop PC Recommendation System with Conversational Interface",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
-            },},{id: "projects-9-project",
-          title: '9_project',
-          description: "another project with an image 🎉",
+            },},{id: "projects-doclick-korean-graduate-student-administrative-task-management-platform",
+          title: 'DoClick - Korean Graduate Student Administrative Task Management Platform',
+          description: "A web-based platform designed to streamline administrative workflows for Korean graduate students, enabling them to focus on research",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
             },},{
