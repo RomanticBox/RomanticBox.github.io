@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: |
-    <p>Department of Computer Science</p>
+    <p>Department of Computer Science and College of Liberal Arts (French Language and Literature)</p>
     <p>Yonsei University</p>
     <p>Seoul, Republic of Korea</p>
     <p>Email: sheepswool@yonsei.ac.kr</p>

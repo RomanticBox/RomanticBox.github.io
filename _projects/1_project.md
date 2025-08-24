@@ -1,6 +1,6 @@
 ---
 layout: page
-title: StoryWeaver Text-to-Image generative model for cartoonists
+title: StoryWeaver
 description: A Text-to-Image model that generates storyboard-style images from scripts for webtoon artists, presented at YBIGTA conference
 img: assets/img/12.jpg
 importance: 1
