@@ -114,8 +114,8 @@ ninja.data = [{
             },},{id: "news-welcome-to-my-personal-website-i-m-excited-to-share-my-research-and-experiences-in-ai-and-machine-learning",
           title: 'Welcome to my personal website! I’m excited to share my research and experiences...',
           description: "",
-          section: "News",},{id: "projects-storyweaver-text-to-image-generative-model-for-cartoonists",
-          title: 'StoryWeaver Text-to-Image generative model for cartoonists',
+          section: "News",},{id: "projects-storyweaver",
+          title: 'StoryWeaver',
           description: "A Text-to-Image model that generates storyboard-style images from scripts for webtoon artists, presented at YBIGTA conference",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
@@ -131,7 +131,7 @@ ninja.data = [{
               window.location.href = "/projects/3_project/";
             },},{id: "projects-얼을-담아-ureul-dama",
           title: '얼을 담아 (Ureul Dama)',
-          description: "Generating snapshot style image according to Korean landmarks",
+          description: "Generating snapshot-style images with Korean landmarks as backgrounds",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
             },},{id: "projects-spot-on",
