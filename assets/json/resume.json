@@ -65,12 +65,12 @@
       "institution": "Yonsei University, Seoul, Republic of Korea",
       "location": "Seoul, Republic of Korea",
       "url": "https://www.yonsei.ac.kr/",
-      "area": "Computer Science & French Language and Literature",
+      "area": "Computer Science & French Language and Literature (Double Major, Summa Cum Laude)",
       "studyType": "Bachelor",
       "startDate": "2020-03-01",
-      "endDate": "2025-08-31",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "endDate": "2025-08-29",
+      "score": "3.95/4.3",
+      "courses": ["French Linguistics (Pragmatics, Syntax, Semantics, Morphology)", "French Literature", "French Culture and Society", "Machine Learning", "Deep Learning", "Natural Language Processing", "Computer Vision", "Data Structures & Algorithms"]
     }
   ],
   "awards": [
