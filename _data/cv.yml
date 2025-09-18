@@ -20,20 +20,28 @@
         - Double Major Coursework: Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Data Structures & Algorithms
         - Research Focus: Pragmatic AI and Digital Humanities, Computational Creativity
         - Thesis: "Cross-linguistic Sound Symbolism in Neural Language Models"
+  contents:
+    - title: Master of Science in Artificial Intelligence
+      institution: Korean Advanced Institute of Science and Technology (KAIST), Daejeon, Republic of Korea
+      year: 2026 - 2028
+      description:
+        - GPA: 
+        - Major Coursework: Artificial Intelligence, Multimodal AI, MLLM, LLM
+        - Research Focus: Language-centered Multimodal AI, Computational Creativity
 
 - title: Experience
   type: time_table
   contents:
     - title: Undergraduate Research Assistant
       institution: MIR Lab, Yonsei University, Seoul, Republic of Korea
-      year: 2024.09. - (Present)
+      year: 2024.09. - 2025.09.
       description:
         - Conducted research on sound symbolism and phonetic-semantic relationships
         - Implemented neural models for cross-linguistic analysis
         - Published findings in academic conferences and journals
     - title: Machine Learning Engineer Intern
       institution: KAI System, Pangyo, Republic of Korea
-      year: 2024.02. - 2025.02., 2025.08. -
+      year: 2024.02. - 2025.02., 2025.08. - 2025.11.
       description:
         - Patented a new method for real-time energy data management
         - Developed and deployed machine learning models for real-time data processing
@@ -51,14 +59,14 @@
     - title: '<a href="https://github.com/winston1214/nonverbal-conversation">Nonverbal Conversation</a>'
       year: 2025
       description:
-        - 25' ACL main conference
+        - 25' ACL Main Conference
         - Open-source toolkit for analyzing nonverbal conversation in neural language models
         - Supports multiple languages and provides visualization tools
         - Used by researchers worldwide for phonetic-semantic analysis
     - title: '<a href="https://github.com/k1064190/MAVL">MAVL: A Multilingual Audio-Video Lyrics Dataset for Animated Song Translation</a>'
       year: 2025
       description:
-        - Submitted at ACL Rolling Review May 2025 (Under Review)
+        - 25' EMNLP Main Conference
         - The first research on multilingual and multimodal lyrics translation
         - Proposes a new benchmark dataset for multilingual and multimodal lyrics translation
         - Provides new evaluation metrics for the quality of the translation
@@ -66,6 +74,9 @@
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2025
+      items:
+        - Graduation as Summa Cum Laude (Top 3% of the college)
     - year: 2024
       items:
         - Yonsei GenAI contest 2024, silver prize

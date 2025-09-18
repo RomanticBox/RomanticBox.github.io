@@ -22,4 +22,8 @@ collection: books
 >
 > -- 백석(Baek seok), 사슴(Deer) (2020)
 
+> Contradiction is a novel about a woman (Ahn jin-jin) finding out the nature of human life and its contradition. She seeks for the one to marry with, and compares the lives of her aunt and her mother (they look identical since they are twins).
+>
+> -- 양귀자(Yang Gui-ja), 모순(Contradiction) (1998)
+
 ## Books that I am reading, have read, or will read
