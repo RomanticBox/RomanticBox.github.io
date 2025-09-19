@@ -52,6 +52,13 @@
       description:
         - Real-time 3D hand pose estimation model for HCI
         - Paper survey for 3D hand pose estimation
+    - title: Incoming M.S candidate
+      institution: Korean Advanced Institute of Science and Technology (KAIST), Daejeon, Republic of Korea
+      year: 2026.03. - 2028.02.
+      description:
+        - Supervised by Yong Man Ro, Prof. in KAIST
+        - Incoming M.S candidate at KAIST
+        - Research Focus: Language-centered Multimodal AI, Computational Creativity
 
 - title: Open Source Projects
   type: time_table
@@ -76,7 +83,7 @@
   contents:
     - year: 2025
       items:
-        - Graduation as Summa Cum Laude (Top 3% of the college)
+        - Graduated with Summa Cum Laude (Top 3% of the college)
     - year: 2024
       items:
         - Yonsei GenAI contest 2024, silver prize

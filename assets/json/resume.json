@@ -4,9 +4,9 @@
     "label": "Student",
     "image": "",
     "email": "sheepswool@yonsei.ac.kr",
-    "phone": "(82) 010-8610-7052",
+    "phone": "",
     "url": "https://romanticbox.github.io/",
-    "summary": "I am a student at Yonsei University, majoring in Computer Science and French Language and Literature. I am interested in Multimodal AI and AI with linguistics.",
+    "summary": "I am an incoming master candidate at KAIST, majoring in Artificial Intelligence. I am interested in Language-centered Multimodal AI and Computational Creativity.",
     "location": {
       "address": "50 Sinchon-ro, Sinchon-dong, Seodaemun-gu",
       "postalCode": "03722",
@@ -16,9 +16,9 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "",
-        "url": "https://twitter.com/"
+        "network": "X (ex Twitter)",
+        "username": "iseonghyeo95180",
+        "url": "https://x.com/iseonghyeo95180"
       },
       {
         "network": "Instagram",
@@ -46,6 +46,15 @@
       "endDate": "2025-02-26",
       "summary": "Developed a Machine Learning pipeline for Korean Factory Energy Management System (KFEMS) handling sequential data.",
       "highlights": ["Patent Pending"]
+    },
+    {
+      "name": "KAI system",
+      "position": "Internship as a Machine Learning Engineer",
+      "url": "",
+      "startDate": "2024-08-04",
+      "endDate": "2025-11-14",
+      "summary": "",
+      "highlights": [""]
     }
   ],
   "volunteer": [
@@ -71,6 +80,17 @@
       "endDate": "2025-08-29",
       "score": "3.95/4.3",
       "courses": ["French Linguistics (Pragmatics, Syntax, Semantics, Morphology)", "French Literature", "French Culture and Society", "Machine Learning", "Deep Learning", "Natural Language Processing", "Computer Vision", "Data Structures & Algorithms"]
+    },
+    {
+      "institution": "Korean Advanced Institute of Science and Technology (KAIST), Daejeon, Republic of Korea",
+      "location": "Daejeon, Republic of Korea",
+      "url": "https://www.kaist.ac.kr/",
+      "area": "Artificial Intelligence",
+      "studyType": "Master",
+      "startDate": "2026-03-01",
+      "endDate": "2028-02-29",
+      "score": "",
+      "courses": [""]
     }
   ],
   "awards": [
@@ -138,7 +158,7 @@
       "name": "Speaking Beyond Language: A Large-Scale Multimodal Dataset for Learning Nonverbal Cues from Video-Grounded Dialogues",
       "publisher": "arxiv",
       "releaseDate": "2025-06-01",
-      "url": "https://arxiv.org/abs/2506.00958",
+      "url": "https://aclanthology.org/2025.acl-long.112/",
       "summary": ""
     },
     {
@@ -172,22 +192,22 @@
     {
       "language": "Korean",
       "fluency": "Native speaker",
-      "icon": ""
+      "icon": "🇰🇷"
     },
     {
       "language": "English",
       "fluency": "Native speaker",
-      "icon": ""
+      "icon": "🇺🇸"
     },
     {
       "language": "French",
       "fluency": "Intermediate",
-      "icon": ""
+      "icon": "🇫🇷"
     },
     {
       "language": "Japanese",
       "fluency": "Basic",
-      "icon": ""
+      "icon": "🇯🇵"
     }
   ],
   "interests": [
@@ -198,6 +218,11 @@
     }
   ],
   "references": [
+    {
+      "name": "Professor Yong Man Ro",
+      "icon": "fa-solid fa-laptop",
+      "reference": ""
+    },
     {
       "name": "Professor Youngjae Yu",
       "icon": "fa-solid fa-laptop",
@@ -211,7 +236,7 @@
   ],
   "projects": [
     {
-      "name": "",
+      "name": "Implementing SLM",
       "summary": "",
       "highlights": [""],
       "startDate": "",

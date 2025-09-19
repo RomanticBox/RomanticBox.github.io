@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: "Yonsei University AI Researcher. AI Creativity Explorer."
+subtitle: "Incoming KAIST AI Researcher. AI Creativity Explorer."
 
 profile:
   align: right
