@@ -79,7 +79,16 @@
       "startDate": "2020-03-01",
       "endDate": "2025-08-29",
       "score": "3.95/4.3",
-      "courses": ["French Linguistics (Pragmatics, Syntax, Semantics, Morphology)", "French Literature", "French Culture and Society", "Machine Learning", "Deep Learning", "Natural Language Processing", "Computer Vision", "Data Structures & Algorithms"]
+      "courses": [
+        "French Linguistics (Pragmatics, Syntax, Semantics, Morphology)",
+        "French Literature",
+        "French Culture and Society",
+        "Machine Learning",
+        "Deep Learning",
+        "Natural Language Processing",
+        "Computer Vision",
+        "Data Structures & Algorithms"
+      ]
     },
     {
       "institution": "Korean Advanced Institute of Science and Technology (KAIST), Daejeon, Republic of Korea",
