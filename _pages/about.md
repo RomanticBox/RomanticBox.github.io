@@ -10,9 +10,9 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: |
     <p>Department of Computer Science and College of Liberal Arts (French Language and Literature)</p>
-    <p>Yonsei University</p>
-    <p>Seoul, Republic of Korea</p>
-    <p>Email: sheepswool@yonsei.ac.kr</p>
+    <p>KAIST(Korean Institute of Advanced Science and Technology)</p>
+    <p>Daejeon, Republic of Korea</p>
+    <p>Email: romanticbox@kaist.ac.kr</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -30,10 +30,10 @@ latest_posts:
 
 ## 👋 Hi, I'm Sunghyun Lee
 
-I'm a machine learning researcher with a deep interest in **multimodal AI**, **AI for media**, and **AI for linguistics**.  
-Currently, my research focuses on the intersection of **sound symbolism** and AI, aiming to understand how models capture and generate human-like phonosemantic patterns across languages.
+I'm a Deep Learning researcher with a deep interest in **Multimodal AI**, **AI for media**, and **Computational Creativity**.  
+Currently, my research focuses capturing the hidden meaning of **silence** in a conversation.
 
-Currently updating my website!
+I'm keep updating my website!
 
 Beyond that, I explore the **creativity of AI** — how machines can generate novel ideas, expressions, or artifacts that go beyond human expectations, and how we might evaluate such output meaningfully.
 
