@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: |
-    <p>Department of Computer Science and College of Liberal Arts (French Language and Literature)</p>
+    <p>Kim Jaechul Graduate School of AI, Artificial Intelligence</p>
     <p>KAIST(Korean Institute of Advanced Science and Technology)</p>
     <p>Daejeon, Republic of Korea</p>
     <p>Email: romanticbox@kaist.ac.kr</p>
@@ -36,6 +36,8 @@ Currently, my research focuses capturing the hidden meaning of **silence** in a 
 I'm keep updating my website!
 
 Beyond that, I explore the **creativity of AI** — how machines can generate novel ideas, expressions, or artifacts that go beyond human expectations, and how we might evaluate such output meaningfully.
+
+I majored Compuer Science and French Language and Literature in Yonsei University, graduated as summa cum laude.
 
 ---
 
