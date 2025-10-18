@@ -101,7 +101,22 @@ ninja.data = [{
             window.location.href = "/blog/2025/plotly/";
           
         },
-      },{id: "books-no-exit",
+      },{id: "books-",
+          title: '',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/bae_love/";
+            },},{id: "books-사슴-deer",
+          title: '사슴 (Deer)',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/baek_deer/";
+            },},{id: "books-양심-conscience",
+          title: '양심 (Conscience)',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/choemazon_conscience/";
+            },},{id: "books-no-exit",
           title: 'No Exit',
           description: "",
           section: "Books",handler: () => {
@@ -111,6 +126,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/shin_language/";
+            },},{id: "books-모순-contradiction",
+          title: '모순 (Contradiction)',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/yang_contradiction/";
             },},{id: "news-welcome-to-my-personal-website-i-m-excited-to-share-my-research-and-experiences-in-ai-and-machine-learning",
           title: 'Welcome to my personal website! I’m excited to share my research and experiences...',
           description: "",
