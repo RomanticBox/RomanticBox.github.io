@@ -2,7 +2,7 @@
 layout: book-review
 title: No Exit
 author: Jean Paul Sartre
-cover: assets/img/book_covers/shin_language.jpg
+cover: assets/img/book_covers/no_exit.jpg
 olid: cover # use Open Library ID to fetch cover (if no `cover` is provided)
 isbn: 9780390777508 # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
 categories: classics existentialism freedom responsibility
