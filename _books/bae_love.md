@@ -1,6 +1,6 @@
 ---
 layout: book-review
-title: 배정원의 사랑학 수업: 연애는 덧셈, 섹스는 곱셈셈
+title: 배정원의 사랑학 수업: 연애는 덧셈, 섹스는 곱셈
 author: 배정원 (Bae Jeong-Weon)
 cover: assets/img/book_covers/bae_love.jpg
 olid: cover # use Open Library ID to fetch cover (if no `cover` is provided)
