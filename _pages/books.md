@@ -14,7 +14,7 @@ collection: books
 >
 > **Related links (written in Korean)**
 >
-> [Ch.3](https://blog.naver.com/romantic_box/223973640814) [Ch.5](https://blog.naver.com/romantic_box/223973679346) [Ch.7](https://blog.naver.com/romantic_box/223905691841) [Ch.8-10](https://blog.naver.com/romantic_box/223973679346)
+> [Ch.3](https://blog.naver.com/romantic_box/223973640814), [Ch.5](https://blog.naver.com/romantic_box/223973679346), [Ch.7](https://blog.naver.com/romantic_box/223905691841), [Ch.8-10](https://blog.naver.com/romantic_box/223973679346)
 >
 > -- 신지영(Shin Jiyoung), 신지영 교수의 언어감수성 수업 (Language Sensibility Lecture by Shin Jiyoung) (2024)
 
@@ -38,7 +38,7 @@ collection: books
 >
 > **Related links (written in Korean)**
 >
-> [Ch.1](https://blog.naver.com/romantic_box/223981069965) [Ch.2-3](https://blog.naver.com/romantic_box/223990279836) [Ch.4-13](https://blog.naver.com/romantic_box/223990279836) [review1](https://blog.naver.com/romantic_box/224001924581) [review2](https://blog.naver.com/romantic_box/224013451186)
+> [Ch.1](https://blog.naver.com/romantic_box/223981069965), [Ch.2-3](https://blog.naver.com/romantic_box/223990279836), [Ch.4-13](https://blog.naver.com/romantic_box/223990279836), [review1](https://blog.naver.com/romantic_box/224001924581), [review2](https://blog.naver.com/romantic_box/224013451186)
 >
 > -- 양귀자(Yang Gui-ja), 모순(Contradiction) (1998)
 
