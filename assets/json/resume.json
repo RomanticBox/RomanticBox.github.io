@@ -179,21 +179,21 @@
   "publications": [
     {
       "name": "Do Language Models Associate Sound with Meaning? A Multimodal Study of Sound Symbolism",
-      "publisher": "arxiv",
+      "publisher": "Association for the Advancement of Artificial Intelligence",
       "releaseDate": "2025-11-08",
       "url": "https://arxiv.org/abs/2511.10045",
       "summary": "Accepted in AAAI 2026 as Oral Presentation as co-lead author"
     },
     {
       "name": "MAVL: A Multilingual Audio-Video Lyrics Dataset for Animated Song Translation",
-      "publisher": "arxiv",
+      "publisher": "Empirical Methods in Natural Language Processing",
       "releaseDate": "2025-05-24",
-      "url": "https://arxiv.org/abs/2505.18614",
+      "url": "https://aclanthology.org/2025.emnlp-main.689/",
       "summary": "Accepted in EMNLP 2025 Main Conference as co-second author"
     },
     {
       "name": "Speaking Beyond Language: A Large-Scale Multimodal Dataset for Learning Nonverbal Cues from Video-Grounded Dialogues",
-      "publisher": "arxiv",
+      "publisher": "Association for Computational Linguistics",
       "releaseDate": "2025-06-01",
       "url": "https://aclanthology.org/2025.acl-long.112/",
       "summary": "Accepted in ACL 2025 Main Conference as third author"
