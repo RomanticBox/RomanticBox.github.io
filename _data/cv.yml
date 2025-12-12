@@ -76,6 +76,14 @@
         - The first research on multilingual and multimodal lyrics translation
         - Proposes a new benchmark dataset for multilingual and multimodal lyrics translation
         - Provides new evaluation metrics for the quality of the translation
+    - title: '<a href="https://github.com/jjhsnail0822/sound-symbolism">Sound Symbolism</a>'
+      year: 2025
+      description:
+        - 26' AAAI Oral Presentation
+        - The first research of inspecting the association of sound and text of MLLMs
+        - Proposes a new dataset for sound symbolism with multimodal data
+        - MLLMs partially follow the pre-existing studies of human iconicity
+        - Qwen, a smaller MLLM model than GPT or Gemini, resembled the most with human iconicity
 
 - title: Honors and Awards
   type: time_table

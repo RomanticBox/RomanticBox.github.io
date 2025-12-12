@@ -3,16 +3,16 @@
     "name": "Sunghyun Lee",
     "label": "Student",
     "image": "",
-    "email": "sheepswool@yonsei.ac.kr",
+    "email": "romanticbox@kaist.ac.kr",
     "phone": "",
     "url": "https://romanticbox.github.io/",
     "summary": "I am an incoming master candidate at KAIST, majoring in Artificial Intelligence. I am interested in Language-centered Multimodal AI and Computational Creativity.",
     "location": {
-      "address": "50 Sinchon-ro, Sinchon-dong, Seodaemun-gu",
-      "postalCode": "03722",
-      "city": "Seoul",
+      "address": " 291 Daehak-ro, Yuseong-gu, Republic of Korea",
+      "postalCode": "34141",
+      "city": "Daejeon",
       "countryCode": "KR",
-      "region": "Seoul"
+      "region": "Daejeon"
     },
     "profiles": [
       {
@@ -40,20 +40,20 @@
   "work": [
     {
       "name": "KAI system",
-      "position": "Internship as a Machine Learning Engineer",
-      "url": "",
+      "position": "Internship as a Machine Learning Engineer and Research Assistant",
+      "url": "https://www.kaisystem.co.kr/",
       "startDate": "2024-02-26",
-      "endDate": "2025-02-26",
+      "endDate": "2025-11-25",
       "summary": "Developed a Machine Learning pipeline for Korean Factory Energy Management System (KFEMS) handling sequential data.",
-      "highlights": ["Patent Pending"]
+      "highlights": ["Patent Pending", "Copyright registration pending"]
     },
     {
-      "name": "KAI system",
-      "position": "Internship as a Machine Learning Engineer",
-      "url": "",
-      "startDate": "2024-08-04",
-      "endDate": "2025-11-14",
-      "summary": "",
+      "name": "MindForge",
+      "position": "Internship as a Research Assistant",
+      "url": "https://www.kaisystem.co.kr/",
+      "startDate": "2023-12-22",
+      "endDate": "2024-02-23",
+      "summary": "Developed a Real-time 3D hand pose estimation model for HCI.",
       "highlights": [""]
     }
   ],
@@ -104,11 +104,32 @@
   ],
   "awards": [
     {
-      "title": "",
-      "date": "",
-      "awarder": "",
+      "title": "Graduated with Summa Cum Laude",
+      "date": "2025-08-29",
+      "awarder": "Yonsei University",
       "url": "",
-      "summary": ""
+      "summary": "Graduated with Top 3% of the college in GPA"
+    },
+    {
+      "title": "Yonsei GenAI contest 2024, silver prize",
+      "date": "2024-12-09",
+      "awarder": "Yonsei University",
+      "url": "_projects/8_project.md",
+      "summary": "AI-Powered Desktop PC Recommendation System with Conversational Interface"
+    },
+    {
+      "title": "Yonsei University Dean's List",
+      "date": "2021-02-01",
+      "awarder": "Yonsei University",
+      "url": "",
+      "summary": "Dean's List for the academic year 2020 fall semester"
+    },
+    {
+      "title": "Yonsei University Dean's List",
+      "date": "2023-02-01",
+      "awarder": "Yonsei University",
+      "url": "",
+      "summary": "Dean's List for the academic year 2022 fall semester"
     }
   ],
   "certificates": [
@@ -116,13 +137,13 @@
       "name": "Microsoft Certified: Azure AI Fundamentals",
       "date": "2023-08-11",
       "issuer": "Microsoft",
-      "url": "",
+      "url": "https://www.credly.com/badges/464a125a-1d65-4960-a375-46975127938a/public_url",
       "icon": "fa-solid fa-location-dot"
     },
     {
-      "name": "",
-      "date": "",
-      "issuer": "",
+      "name": "Military Service Completion",
+      "date": "2022-08-15",
+      "issuer": "Republic of Korea Army",
       "url": "",
       "icon": ""
     },
@@ -157,25 +178,25 @@
   ],
   "publications": [
     {
+      "name": "Do Language Models Associate Sound with Meaning? A Multimodal Study of Sound Symbolism",
+      "publisher": "arxiv",
+      "releaseDate": "2025-11-08",
+      "url": "https://arxiv.org/abs/2511.10045",
+      "summary": "Accepted in AAAI 2026 as Oral Presentation as co-lead author"
+    },
+    {
       "name": "MAVL: A Multilingual Audio-Video Lyrics Dataset for Animated Song Translation",
       "publisher": "arxiv",
       "releaseDate": "2025-05-24",
       "url": "https://arxiv.org/abs/2505.18614",
-      "summary": ""
+      "summary": "Accepted in EMNLP 2025 Main Conference as co-second author"
     },
     {
       "name": "Speaking Beyond Language: A Large-Scale Multimodal Dataset for Learning Nonverbal Cues from Video-Grounded Dialogues",
       "publisher": "arxiv",
       "releaseDate": "2025-06-01",
       "url": "https://aclanthology.org/2025.acl-long.112/",
-      "summary": ""
-    },
-    {
-      "name": "",
-      "publisher": "",
-      "releaseDate": "",
-      "url": "",
-      "summary": ""
+      "summary": "Accepted in ACL 2025 Main Conference as third author"
     }
   ],
   "skills": [
@@ -195,6 +216,12 @@
         "Data Science",
         "Data Preprocessing and Construction"
       ]
+    },
+    {
+      "name": "French",
+      "level": "Bachelor",
+      "icon": "fa-solid fa-language",
+      "keywords": ["French linguistics (Pragmatics, Semantics, Syntax, Morphology)", "French literature (Video art, Poetry, Novel)"]
     }
   ],
   "languages": [
@@ -223,32 +250,40 @@
     {
       "name": "Multimodal AI",
       "icon": "fa-solid fa-tag",
-      "keywords": ["Multimodal AI", "AI with Linguistics", "3D-Language Learning", "Multilingual AI", ""]
+      "keywords": ["Multimodal AI", "AI with Linguistics", "3D-Language Learning", "Multilingual AI"]
+    },
+    {
+      "name": "Computational Creativity",
+      "icon": "fa-solid fa-tag",
+      "keywords": ["Creative thinking of AI", "AI-assisted Creativity Tools", "Affective Computing", "Computational Social Science"]
     }
   ],
   "references": [
     {
       "name": "Professor Yong Man Ro",
       "icon": "fa-solid fa-laptop",
-      "reference": ""
+      "reference": "ivylab.kaist.ac.kr/people/professor"
     },
     {
       "name": "Professor Youngjae Yu",
       "icon": "fa-solid fa-laptop",
-      "reference": ""
-    },
-    {
-      "name": "",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": ""
+      "reference": "yj-yu.github.io/home/"
     }
   ],
   "projects": [
     {
-      "name": "Implementing SLM",
+      "name": "Implementing RAG LLM Service for Korean Factory Energy Management System (KFEMS)",
+      "summary": "Developed a RAG LLM service for Korean Factory Energy Management System (KFEMS) to provide energy management insights and recommendations.",
+      "highlights": ["Implemented the prototype of internal RAG LLM service for FEMS."],
+      "startDate": "2025-08-04",
+      "endDate": "2025-11-25",
+      "url": "https://www.kaisystem.co.kr/"
+    },
+    {
+      "name": "Silence and MLLM",
       "summary": "",
       "highlights": [""],
-      "startDate": "",
+      "startDate": "2025-12-08",
       "endDate": "",
       "url": ""
     }
