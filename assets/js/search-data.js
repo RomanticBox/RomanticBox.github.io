@@ -39,7 +39,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "Let me introduce myself! You can download the pdf file at the right top side of the button.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -102,6 +102,11 @@ ninja.data = [{
           
         },
       },{id: "books-",
+          title: '',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Hollins_Introvert/";
+            },},{id: "books-",
           title: '',
           description: "",
           section: "Books",handler: () => {
