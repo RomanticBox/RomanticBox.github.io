@@ -5,7 +5,7 @@
 # acm_id: # your dl.acm.org/profile/id
 # blogger_url: # your blogger URL
 # bluesky_url: # your bluesky URL
-# dblp_url: # your DBLP profile url
+dblp_url: https://dblp.org/pid/84/6527.html
 # discord_id: # your discord id (18-digit unique numerical identifier)
 email: sheepswool@yonsei.ac.kr # your email address
 # facebook_id: # your facebook id
@@ -13,13 +13,13 @@ email: sheepswool@yonsei.ac.kr # your email address
 github_username: RomanticBox # your GitHub user name
 # gitlab_username: # your GitLab user name
 # ieee_id: # your ieeexplore.ieee.org/author/id
-inspirehep_id: 1010907 # Inspire HEP author ID
+# inspirehep_id: 1010907 # Inspire HEP author ID
 instagram_id: romanticbox_
 kaggle_id: romanbox # your kaggle id
 # keybase_username: # your keybase user name
 # lastfm_id: # your lastfm id
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
-leetcode_id: romanticBox # your LeetCode id
+leetcode_id: romanticBox
 linkedin_username: leesunghyun
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 # medium_username: # your Medium username
