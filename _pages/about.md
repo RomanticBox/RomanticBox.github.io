@@ -30,14 +30,14 @@ latest_posts:
 
 ## 👋 Hi, I'm Sunghyun Lee
 
-I'm a Deep Learning researcher with a deep interest in **Multimodal AI**, **AI for media**, and **Computational Creativity**.  
+I'm a Deep Learning researcher with a deep interest in **Multimodal ToM**, **AI for media**, and **Computational Creativity**.  
 Currently, my research focuses capturing the hidden meaning of **silence** in a conversation.
 
 I'm keep updating my website!
 
 Beyond that, I explore the **creativity of AI** — how machines can generate novel ideas, expressions, or artifacts that go beyond human expectations, and how we might evaluate such output meaningfully.
 
-I majored Compuer Science and French Language and Literature in Yonsei University, graduated as summa cum laude.
+I majored Computer Science and French Language and Literature in Yonsei University, graduated as summa cum laude.
 
 ---
 
