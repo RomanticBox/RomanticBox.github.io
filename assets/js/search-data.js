@@ -216,7 +216,7 @@ ninja.data = [{
         title: 'Instagram',
         section: 'Socials',
         handler: () => {
-          window.open("https://instagram.com/deux_saint.s", "_blank");
+          window.open("https://instagram.com/romanticbox_", "_blank");
         },
       },{
         id: 'social-kaggle',
