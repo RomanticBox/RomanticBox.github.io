@@ -90,17 +90,6 @@ ninja.data = [{
             window.open("https://blog.naver.com/romantic_box", "_blank");
           
         },
-      },{id: "post-a-post-with-plotly-js",
-        
-          title: "a post with plotly.js",
-        
-        description: "this is what included plotly.js code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/plotly/";
-          
-        },
       },{id: "books-",
           title: '',
           description: "",
@@ -191,6 +180,13 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
             },},{
+        id: 'social-dblp',
+        title: 'DBLP',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://dblp.org/pid/84/6527.html", "_blank");
+        },
+      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
@@ -203,13 +199,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/RomanticBox", "_blank");
-        },
-      },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
         },
       },{
         id: 'social-instagram',
