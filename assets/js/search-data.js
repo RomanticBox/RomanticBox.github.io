@@ -105,21 +105,26 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/Hollins_Introvert/";
-            },},{id: "books-a-to-z-mysteries-the-zombie-zone",
-          title: 'A to Z mysteries - The Zombie Zone',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/Ron_Zombie/";
             },},{id: "books-no-exit",
           title: 'No Exit',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/Sartre_No_exit/";
+            },},{id: "books-a-to-z-mysteries-the-zombie-zone",
+          title: 'A to Z mysteries - The Zombie Zone',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Ron_Zombie/";
             },},{id: "books-",
           title: '',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/bae_love/";
+            },},{id: "books-신지영-교수의-언어감수성-수업",
+          title: '신지영 교수의 언어감수성 수업',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/shin_language/";
             },},{id: "books-사슴-deer",
           title: '사슴 (Deer)',
           description: "",
@@ -130,21 +135,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/choemazon_conscience/";
-            },},{id: "books-no-longer-human-인간실격-人間失格",
-          title: 'No Longer Human (인간실격, 人間失格)',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/dazai_human/";
-            },},{id: "books-신지영-교수의-언어감수성-수업",
-          title: '신지영 교수의 언어감수성 수업',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/shin_language/";
             },},{id: "books-모순-contradiction",
           title: '모순 (Contradiction)',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/yang_contradiction/";
+            },},{id: "books-no-longer-human-인간실격-人間失格",
+          title: 'No Longer Human (인간실격, 人間失格)',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/dazai_human/";
             },},{id: "news-welcome-to-my-personal-website-i-m-excited-to-share-my-research-and-experiences-in-ai-and-machine-learning",
           title: 'Welcome to my personal website! I’m excited to share my research and experiences...',
           description: "",
