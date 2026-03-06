@@ -31,7 +31,7 @@ latest_posts:
 ## 👋 Hi, I'm Sunghyun Lee
 
 I'm a Deep Learning researcher with a deep interest in **Multimodal ToM**, **AI for media**, and **Computational Creativity**.  
-Currently, my keyword of research is **silence**.
+Currently, my keyword of research is conversation.
 
 I'm keep updating my website!
 

@@ -13,8 +13,8 @@ profiles:
     image: prof_pic.jpg
     content: about.md
     image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>Yonsei University Engineering Park 412C</p>
-      <p>50 shinchon-street seodaemungu</p>
-      <p>Seoul</p>
+    more_info: |
+      291 Daehak-ro, Yuseong-gu  
+      Daejeon 34141  
+      Republic of Korea
 ---

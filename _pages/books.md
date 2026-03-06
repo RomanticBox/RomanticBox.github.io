@@ -42,8 +42,38 @@ collection: books
 >
 > -- 양귀자(Yang Gui-ja), 모순(Contradiction) (1998)
 
+> This book explains about the characteristics of introvert people and how to manage their traits. I am half introvert and extrovert, so it helped me understand about myself.
+> **Related links (written in Korean)**  
+> [blog post](https://blog.naver.com/romantic_box/224102908132)
+>
+> -- Peter Hollins(피터 홀린스), The Science of Introverts: Explore the Personality of the Introvert, Nurture Your Inner Life, and Manage Your Energy(혼자 있고 싶은데 외로운 건 싫어) (2018)
+
+> This book talks about the reason people compare with others and analyze about inferiority. It gives us a guide how to wisely deal with these feelings and attitudes.
+> **Related links (written in Korean)**  
+> [blog post](https://blog.naver.com/romantic_box/224149315355)
+>
+> -- Alfred Adler(알프레드 아들러), 민유한(Yu-ha Min), 제이한(J-Han): 나는 왜 자꾸 비교하는가 (translated: Adler's Advice on Comparison and Inferiority) (2025)
+
+> This book tells a story of a small village with a weird rumor that a zombie has been found in the graveyard. The kids (protagonists) get the clues and find out what happened there.
+> **Related links (written in Korean)**  
+> [blog post](https://blog.naver.com/romantic_box/224150313491)
+>
+> -- Ron Roy: A to Z mysteries - The Zombie Zone (2006)
+
+> This book is well known as the milestone of Japanese modern literature. We can know how a person can fall into the point of no return when the one faces harsh failures and poor environments.
+> **Related links (written in Korean)**  
+> [blog post](https://blog.naver.com/romantic_box/224194724884)
+>
+> -- Dazai Osamu (다자이 오사무, 太宰 治): No Longer Human (인간실격, 人間失格) (2004, original book released in 1948)
+
+> The book explains how to love each other and understand. It includes various topics with kind and soft explanations to let us know about what love is.
+> **Related links (written in Korean)**  
+> [Beginning to read](https://blog.naver.com/romantic_box/224041402900), [Ch.1-2](https://blog.naver.com/romantic_box/224062144554), [Ch.3-5](https://blog.naver.com/romantic_box/224070593617)
+>
+> -- 배정원(Bae Jeong-weon), 배정원의 사랑학 수업(Lecture on Love Studies by Bae Jeong-weon(translated)) (2023)
+
 ## Books that I am reading, have read, or will read
 
 > I'm reading this!
 >
-> -- 배정원(Bae Jeong-weon), 배정원의 사랑학 수업(Lecture on Love Studies by Bae Jeong-weon(translated)) (2023)
+> -- Carlo M. Cipolla (카를로 M. 치폴라), Clocks and Culture (시계와 문명) (2013)

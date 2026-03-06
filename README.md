@@ -366,8 +366,6 @@ Photo formatting is made simple using [Bootstrap's grid system](https://getboots
 
 [![Repositories Preview](readme_preview/repositories.png)](https://alshedivat.github.io/al-folio/repositories/)
 
-Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories to the `/repositories/` page.
-
 You may also use the following codes for displaying this in any other pages.
 
 ```html

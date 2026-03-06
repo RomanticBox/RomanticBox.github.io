@@ -12,8 +12,8 @@ started: 2025-10-14
 finished: 2025-10-31
 released: 2024
 stars: 5
-goodreads_review: 6318556633
-status: Reading
+goodreads_review:
+status: Finished
 ---
 
 In a nutshell, this is a book telling to speak polite, pretty, and sophisticated.
