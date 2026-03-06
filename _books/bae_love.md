@@ -6,14 +6,16 @@ cover: assets/img/book_covers/bae_love.jpg
 olid: cover # use Open Library ID to fetch cover (if no `cover` is provided)
 isbn: 9791164712533 # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
 categories: Love, Psychology, Relationship, Communication
-tags: top-100
+tags:
+  - top-100
 buy_link: https://www.yes24.com/product/goods/123772414
+date: 2025-10-31
 started: 2025-10-14
 finished: 2025-10-31
 released: 2024
 stars: 5
 goodreads_review:
-status: Finished
+status: finished
 ---
 
 In a nutshell, this is a book telling to speak polite, pretty, and sophisticated.

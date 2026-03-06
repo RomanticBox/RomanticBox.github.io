@@ -8,12 +8,13 @@ isbn: 9791199059078 # use ISBN to fetch cover (if no `olid` is provided, dashes 
 categories: Essay
 tags: top-100
 buy_link: https://product.kyobobook.co.kr/detail/S000215014990
+date: 2025-08-24
 started: 2025-08-22
 finished: 2025-08-24
 released: 2025
 stars: 5
 goodreads_review: 6318556633
-status: Finished
+status: finished
 ---
 
 In a nutshell, this is a book of professor Choe's life, which he faced his conscience, act, and eventually change the society in the way he believe.

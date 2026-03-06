@@ -8,12 +8,13 @@ isbn: 9791191200126 # use ISBN to fetch cover (if no `olid` is provided, dashes 
 categories: Korean poems
 tags: top-100
 buy_link: https://product.kyobobook.co.kr/detail/S000001774618
+date: 2025-08-23
 started: 2025-08-17
 finished: 2025-08-23
 released: 1936
 stars: 5
 goodreads_review: 6318556633
-status: Finished
+status: finished
 ---
 
 In a nutshell, this is a collection of the poet 'Baek Seok's poems.
