@@ -79,9 +79,9 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-사랑하고-사랑-받는-모든-것을-위한-책장-네이버-블로그",
+            },{id: "post-사랑하고-사랑-받는-모든-것을-위한-아지트-네이버-블로그",
         
-          title: '사랑하고 사랑 받는 모든 것을 위한 책장 : 네이버 블로그 <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+          title: '사랑하고 사랑 받는 모든 것을 위한 아지트 : 네이버 블로그 <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
         description: "",
         section: "Posts",
@@ -94,7 +94,27 @@ ninja.data = [{
           title: '',
           description: "",
           section: "Books",handler: () => {
+              window.location.href = "/books/Adler_comparison/";
+            },},{id: "books-시계와-문명-clocks-and-culture",
+          title: '시계와 문명 (Clocks and Culture)',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Carlo_clocks/";
+            },},{id: "books-",
+          title: '',
+          description: "",
+          section: "Books",handler: () => {
               window.location.href = "/books/Hollins_Introvert/";
+            },},{id: "books-a-to-z-mysteries-the-zombie-zone",
+          title: 'A to Z mysteries - The Zombie Zone',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Ron_Zombie/";
+            },},{id: "books-no-exit",
+          title: 'No Exit',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Sartre_No_exit/";
             },},{id: "books-",
           title: '',
           description: "",
@@ -110,11 +130,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/choemazon_conscience/";
-            },},{id: "books-no-exit",
-          title: 'No Exit',
+            },},{id: "books-no-longer-human-인간실격-人間失格",
+          title: 'No Longer Human (인간실격, 人間失格)',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/no_exit/";
+              window.location.href = "/books/dazai_human/";
             },},{id: "books-신지영-교수의-언어감수성-수업",
           title: '신지영 교수의 언어감수성 수업',
           description: "",
