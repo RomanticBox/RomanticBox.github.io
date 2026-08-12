@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: "KAIST AI Researcher. AI Creativity Explorer."
+subtitle: "KAIST Master's Degree Student. AI Creativity Explorer."
 
 profile:
   align: right
@@ -30,12 +30,12 @@ latest_posts:
 
 ## 👋 Hi, I'm Sunghyun Lee
 
-I'm a Deep Learning researcher driven by two research questions:
+I'm a Multimodal AI researcher driven by two research questions:
 
-- **Communication & well-being** — How can AI understand and support human communication and mental well-being in everyday life?
-- **Productivity** — How can AI understand and support human productive activities?
+- How can AI understand and support human communication and mental health in everyday life?
+- How can AI understand and support human productive activities?
 
-My current research keyword is **conversation**, and I'm broadly interested in **Multimodal ToM**, **AI for media**, and **Computational Creativity** — how machines can generate novel ideas, expressions, or artifacts that go beyond human expectations, and how we might evaluate such output meaningfully.
+I'm broadly interested in **Computational Linguistics**, **Multimodal AI**, **World Models**, and **Computational Creativity**.
 
 I majored in Computer Science and French Language and Literature at Yonsei University, graduating as summa cum laude (top 3%).
 
@@ -43,11 +43,10 @@ I majored in Computer Science and French Language and Literature at Yonsei Unive
 
 ## 🧠 Research Interests
 
-- Multimodal understanding and generation
-- Human–AI interaction and creativity
-- Pragmatics-based human interaction understanding and generation
-- Storytelling and media generation by AI
-- Computational artistry and creativity
+- Computational Linguistics
+- Multimodal AI
+- World Models
+- Computational Creativity
 
 ---
 
