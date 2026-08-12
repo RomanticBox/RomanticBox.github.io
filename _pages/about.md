@@ -53,7 +53,7 @@ I majored in Computer Science and French Language and Literature at Yonsei Unive
 
 ## ✨ Motto
 
-> "Live to enjoy the process, not chase the goal."
+> "A Life to Savor the Progress rather than Chase the Goal"
 
 ---
 
