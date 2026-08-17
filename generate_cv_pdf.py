@@ -6,6 +6,7 @@ Generates a professional CV PDF from resume.json file
 
 import json
 import os
+import re
 from datetime import datetime
 from reportlab.lib.pagesizes import letter, A4
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
@@ -20,6 +21,13 @@ def load_resume_data(json_path):
     """Load resume data from JSON file"""
     with open(json_path, 'r', encoding='utf-8') as f:
         return json.load(f)
+
+def strip_unrenderable_glyphs(text):
+    """Strip Hangul parentheticals and flag emoji: reportlab's base fonts (Helvetica)
+    have no Hangul glyphs and no color-emoji support, so they render as blank boxes."""
+    text = re.sub(r'\s*\([^)]*[가-힣][^)]*\)', '', text)
+    text = re.sub(r'[\U0001F1E6-\U0001F1FF]', '', text)
+    return re.sub(r'\s{2,}', ' ', text).strip()
 
 def format_date(date_str):
     """Format date string (YYYY-MM-DD) to readable format"""
@@ -76,10 +84,11 @@ def create_cv_pdf(resume_data, output_path):
     
     # Header: Name and Contact Info
     basics = resume_data.get('basics', {})
-    name = basics.get('name', '')
+    name = strip_unrenderable_glyphs(basics.get('name', ''))
     label = basics.get('label', '')
     email = basics.get('email', '')
     url = basics.get('url', '')
+    nationality = strip_unrenderable_glyphs(basics.get('nationality', ''))
     summary = basics.get('summary', '')
     location = basics.get('location', {})
     
@@ -92,6 +101,8 @@ def create_cv_pdf(resume_data, output_path):
     contact_info = []
     if email:
         contact_info.append(f"Email: {email}")
+    if nationality:
+        contact_info.append(f"Nationality: {nationality}")
     if url:
         contact_info.append(f"Website: {url}")
     if location.get('city') and location.get('countryCode'):
@@ -152,15 +163,15 @@ def create_cv_pdf(resume_data, output_path):
         story.append(Paragraph("<b>Work Experience</b>", heading_style))
         for job in work:
             name = job.get('name', '')
-            position = job.get('position', '')
+            position = job.get('position', '').replace('**', '')
             start_date = format_date(job.get('startDate', ''))
             end_date = format_date(job.get('endDate', ''))
             summary = job.get('summary', '')
             highlights = job.get('highlights', [])
-            
-            work_text = f"<b>{position}</b>"
-            if name:
-                work_text += f" | {name}"
+
+            work_text = f"<b>{name}</b>"
+            if position:
+                work_text += f" | {position}"
             if start_date and end_date:
                 work_text += f"<br/>{start_date} - {end_date}"
             elif start_date:
@@ -185,13 +196,16 @@ def create_cv_pdf(resume_data, output_path):
             publisher = pub.get('publisher', '')
             release_date = format_date(pub.get('releaseDate', ''))
             summary = pub.get('summary', '')
+            authors = pub.get('authors', '').replace('Sunghyun Lee', '<b>Sunghyun Lee</b>')
             url = pub.get('url', '')
-            
+
             pub_text = f"<b>{name}</b>"
             if publisher:
                 pub_text += f" | {publisher}"
             if release_date:
                 pub_text += f" ({release_date})"
+            if authors:
+                pub_text += f"<br/>{authors}"
             if summary:
                 pub_text += f"<br/>{summary}"
             
