@@ -5,6 +5,8 @@ inline: true
 related_posts: false
 ---
 
+**AAAI-26 Oral, 1st Co-Author**
+
 I'm so happy to share a news that our paper has been accepted to AAAI-26 as oral presentation!!
 **Do you think MLLMs understand sound as human understands?** For some models, the answer is **YES**, for others, the answer is **NO**. GPT and Gemini seems to not infer the sound as humans does. However, Qwen2.5 resembled the result of experiment conducted by humans. Our research digged down to this question.
 

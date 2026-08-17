@@ -30,29 +30,34 @@ latest_posts:
 
 ## 👋 Hi, I'm Sunghyun Lee
 
-I'm a Multimodal AI researcher driven by two research questions:
+I'm a Multimodal AI researcher and Master's student at [KAIST](https://www.kaist.ac.kr/en/)'s [Kim Jaechul Graduate School of AI](https://gsai.kaist.ac.kr/), advised by [Professor Yong Man Ro](https://www.ivylab.kaist.ac.kr/ivylab-ivllab). My work explores AI creativity, multimodality, and language, driven by two research questions:
 
 - How can AI understand and support human communication and mental health in everyday life?
 - How can AI understand and support human productive activities?
 
-I'm broadly interested in **Computational Linguistics**, **Multimodal AI**, **World Models**, and **Computational Creativity**.
+I'm broadly interested in **Computational Linguistics**, **Multimodal AI**, **World Models**, **Computational Creativity**, and **AI for Human**.
 
 I majored in Computer Science and French Language and Literature at Yonsei University, graduating as summa cum laude (top 3%).
+
+Check out my [CV](/cv/) for more details.
 
 ---
 
 ## 🧠 Research Interests
 
-- Computational Linguistics
-- Multimodal AI
-- World Models
-- Computational Creativity
+- **Computational Linguistics**
+  (Multilinguality, Pragmatics, Phonetics)
+- **Multimodal AI**
+  (Multimodal Communication Pragmatics — e.g., Human Motion; Theory of Mind)
+- **World Models**
+- **Computational Creativity**
+- **AI for Human**
 
 ---
 
 ## ✨ Motto
 
-> "A Life to Savor the Progress rather than Chase the Goal"
+> "Savor the Journey, Not the Destination"
 
 ---
 
