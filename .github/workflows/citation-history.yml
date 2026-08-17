@@ -1,0 +1,28 @@
+name: Update citation history
+
+on:
+  schedule:
+    # Weekly, shortly before the Monday 00:00 UTC site rebuild (see deploy.yml)
+    - cron: "30 23 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+      - name: Setup Python 🐍
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Update citation history 📈
+        run: python update_citation_history.py
+      - name: Commit changes 📝
+        uses: stefanzweifel/git-auto-commit-action@v5.0.1
+        with:
+          commit_message: "Update citation history"
+          file_pattern: _data/citation_history.json
