@@ -141,17 +141,22 @@ def create_cv_pdf(resume_data, output_path, base_dir):
     if location.get('city') and location.get('countryCode'):
         contact_info.append(f"Location: {location['city']}, {location['countryCode']}")
 
-    link_parts = []
+    # Curated header link row: [Email] [Github] [LinkedIn] [Google Scholar] [CV]
+    profile_map = {p.get('network', '').strip().lower(): p.get('url', '') for p in profiles}
+    curated_links = []
+    if email:
+        first_email = email.split(',')[0].strip()
+        curated_links.append(('Email', f'mailto:{first_email}'))
+    if profile_map.get('github'):
+        curated_links.append(('Github', profile_map['github']))
+    if profile_map.get('linkedin'):
+        curated_links.append(('LinkedIn', profile_map['linkedin']))
+    if profile_map.get('google scholar'):
+        curated_links.append(('Google Scholar', profile_map['google scholar']))
     if url:
-        link_parts.append(f'<link href="{url}" color="#2c5aa0">Website</link>')
-    for profile in profiles:
-        network = profile.get('network', '')
-        profile_url = profile.get('url', '')
-        username = profile.get('username', '')
-        if profile_url:
-            link_parts.append(f'<link href="{profile_url}" color="#2c5aa0">{network}</link>')
-        elif network and username:
-            link_parts.append(f"{network}: {username}")
+        curated_links.append(('CV', url.rstrip('/') + '/cv/'))
+
+    link_parts = [f'<link href="{href}" color="#2c5aa0">[{label_text}]</link>' for label_text, href in curated_links]
 
     header_right = [Paragraph(name, title_style)]
     if label:
