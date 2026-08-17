@@ -12,10 +12,12 @@ from reportlab.lib.pagesizes import letter, A4
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import inch
 from reportlab.lib import colors
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, Table, TableStyle
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, Table, TableStyle, Image
 from reportlab.lib.enums import TA_LEFT, TA_CENTER, TA_JUSTIFY
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
+
+PAGE_WIDTH = 7.0 * inch  # usable width after 0.75in margins on letter size
 
 def load_resume_data(json_path):
     """Load resume data from JSON file"""
@@ -39,50 +41,88 @@ def format_date(date_str):
     except:
         return date_str
 
-def create_cv_pdf(resume_data, output_path):
+def to_bullets(text):
+    """Split a summary paragraph into standalone sentences for bullet display."""
+    if not text:
+        return []
+    return [s.strip() for s in re.split(r'(?<=[.!?])\s+', text.strip()) if s.strip()]
+
+def sorted_by_date(entries, key='startDate', reverse=True):
+    return sorted(entries, key=lambda e: e.get(key) or '', reverse=reverse)
+
+def create_cv_pdf(resume_data, output_path, base_dir):
     """Create CV PDF from resume data"""
     doc = SimpleDocTemplate(
         output_path,
         pagesize=letter,
         rightMargin=0.75*inch,
         leftMargin=0.75*inch,
-        topMargin=0.75*inch,
-        bottomMargin=0.75*inch
+        topMargin=0.6*inch,
+        bottomMargin=0.6*inch,
+        title="CV(Sunghyun Lee, KAIST)",
+        author="Sunghyun Lee",
+        subject="Curriculum Vitae",
     )
-    
+
     story = []
     styles = getSampleStyleSheet()
-    
+
     # Custom styles
     title_style = ParagraphStyle(
-        'CustomTitle',
-        parent=styles['Heading1'],
-        fontSize=24,
-        textColor=colors.HexColor('#1a1a1a'),
-        spaceAfter=6,
-        alignment=TA_LEFT
+        'CustomTitle', parent=styles['Heading1'], fontSize=22,
+        textColor=colors.HexColor('#1a1a1a'), spaceAfter=2, alignment=TA_LEFT
     )
-    
+    label_style = ParagraphStyle(
+        'CustomLabel', parent=styles['Normal'], fontSize=11,
+        textColor=colors.HexColor('#2c5aa0'), spaceAfter=4
+    )
     heading_style = ParagraphStyle(
-        'CustomHeading',
-        parent=styles['Heading2'],
-        fontSize=14,
-        textColor=colors.HexColor('#2c3e50'),
-        spaceAfter=12,
-        spaceBefore=12,
-        fontName='Helvetica-Bold'
+        'CustomHeading', parent=styles['Heading2'], fontSize=13,
+        textColor=colors.white, backColor=colors.HexColor('#2c3e50'),
+        spaceAfter=8, spaceBefore=14, fontName='Helvetica-Bold',
+        leftIndent=6, borderPadding=(4, 4, 4, 4)
     )
-    
     normal_style = ParagraphStyle(
-        'CustomNormal',
-        parent=styles['Normal'],
-        fontSize=10,
-        textColor=colors.HexColor('#333333'),
-        spaceAfter=6,
-        leading=14
+        'CustomNormal', parent=styles['Normal'], fontSize=9.5,
+        textColor=colors.HexColor('#333333'), leading=13
     )
-    
-    # Header: Name and Contact Info
+    bold_style = ParagraphStyle('CustomBold', parent=normal_style, fontName='Helvetica-Bold')
+    small_italic_style = ParagraphStyle(
+        'CustomSmallItalic', parent=normal_style, fontSize=9,
+        textColor=colors.HexColor('#555555'), fontName='Helvetica-Oblique'
+    )
+    bullet_style = ParagraphStyle('CustomBullet', parent=normal_style, leftIndent=10, spaceAfter=2)
+
+    def cell_para(text, style=normal_style):
+        return Paragraph(text, style)
+
+    def section_heading(text):
+        story.append(Paragraph(text.upper(), heading_style))
+
+    def styled_table(rows, col_widths, header=False):
+        table = Table(rows, colWidths=col_widths, hAlign='LEFT')
+        cmds = [
+            ('GRID', (0, 0), (-1, -1), 0.5, colors.HexColor('#dddddd')),
+            ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+            ('LEFTPADDING', (0, 0), (-1, -1), 6),
+            ('RIGHTPADDING', (0, 0), (-1, -1), 6),
+            ('TOPPADDING', (0, 0), (-1, -1), 5),
+            ('BOTTOMPADDING', (0, 0), (-1, -1), 5),
+        ]
+        start = 0
+        if header:
+            cmds.append(('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#eef1f5')))
+            start = 1
+        for i in range(start, len(rows)):
+            if (i - start) % 2 == 1:
+                cmds.append(('BACKGROUND', (0, i), (-1, i), colors.HexColor('#f7f7f9')))
+        table.setStyle(TableStyle(cmds))
+        story.append(table)
+        story.append(Spacer(1, 0.15*inch))
+
+    # ------------------------------------------------------------------
+    # Header: photo + name + contact + links
+    # ------------------------------------------------------------------
     basics = resume_data.get('basics', {})
     name = strip_unrenderable_glyphs(basics.get('name', ''))
     label = basics.get('label', '')
@@ -91,228 +131,182 @@ def create_cv_pdf(resume_data, output_path):
     nationality = strip_unrenderable_glyphs(basics.get('nationality', ''))
     summary = basics.get('summary', '')
     location = basics.get('location', {})
-    
-    story.append(Paragraph(name, title_style))
-    if label:
-        story.append(Paragraph(label, normal_style))
-    story.append(Spacer(1, 0.1*inch))
-    
-    # Contact information
+    profiles = basics.get('profiles', [])
+
     contact_info = []
     if email:
         contact_info.append(f"Email: {email}")
     if nationality:
         contact_info.append(f"Nationality: {nationality}")
-    if url:
-        contact_info.append(f"Website: {url}")
     if location.get('city') and location.get('countryCode'):
         contact_info.append(f"Location: {location['city']}, {location['countryCode']}")
-    
+
+    link_parts = []
+    if url:
+        link_parts.append(f'<link href="{url}" color="#2c5aa0">Website</link>')
+    for profile in profiles:
+        network = profile.get('network', '')
+        profile_url = profile.get('url', '')
+        username = profile.get('username', '')
+        if profile_url:
+            link_parts.append(f'<link href="{profile_url}" color="#2c5aa0">{network}</link>')
+        elif network and username:
+            link_parts.append(f"{network}: {username}")
+
+    header_right = [Paragraph(name, title_style)]
+    if label:
+        header_right.append(Paragraph(label, label_style))
     if contact_info:
-        story.append(Paragraph(" | ".join(contact_info), normal_style))
+        header_right.append(Paragraph(" &nbsp;|&nbsp; ".join(contact_info), normal_style))
+    if link_parts:
+        header_right.append(Paragraph(" &nbsp;|&nbsp; ".join(link_parts), normal_style))
+
+    photo_path = os.path.join(base_dir, 'assets', 'img', 'prof_pic.jpg')
+    if os.path.exists(photo_path):
+        photo_width = 1.1 * inch
+        photo_height = photo_width * (4032 / 3024)
+        header_left = Image(photo_path, width=photo_width, height=photo_height)
+        header_table = Table(
+            [[header_left, header_right]],
+            colWidths=[1.3*inch, PAGE_WIDTH - 1.3*inch],
+        )
+        header_table.setStyle(TableStyle([
+            ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+            ('LEFTPADDING', (0, 0), (-1, -1), 0),
+            ('RIGHTPADDING', (0, 0), (0, 0), 12),
+        ]))
+        story.append(header_table)
+    else:
+        story.extend(header_right)
+    story.append(Spacer(1, 0.15*inch))
+
+    # Summary as bullet points
+    summary_bullets = to_bullets(summary)
+    if summary_bullets:
+        section_heading('Summary')
+        for b in summary_bullets:
+            story.append(Paragraph(f"• {b}", bullet_style))
         story.append(Spacer(1, 0.1*inch))
-    
-    # Social profiles
-    profiles = basics.get('profiles', [])
-    if profiles:
-        profile_links = []
-        for profile in profiles:
-            network = profile.get('network', '')
-            username = profile.get('username', '')
-            if network and username:
-                profile_links.append(f"{network}: {username}")
-        if profile_links:
-            story.append(Paragraph(" | ".join(profile_links), normal_style))
-            story.append(Spacer(1, 0.15*inch))
-    
-    # Summary
-    if summary:
-        story.append(Paragraph("<b>Summary</b>", heading_style))
-        story.append(Paragraph(summary, normal_style))
-        story.append(Spacer(1, 0.1*inch))
-    
-    # Education
-    education = resume_data.get('education', [])
+
+    # ------------------------------------------------------------------
+    # Education (most important for an academic CV)
+    # ------------------------------------------------------------------
+    education = sorted_by_date(resume_data.get('education', []))
     if education:
-        story.append(Paragraph("<b>Education</b>", heading_style))
+        section_heading('Education')
+        rows = [[cell_para('<b>Degree</b>'), cell_para('<b>Period</b>'), cell_para('<b>GPA</b>')]]
         for edu in education:
-            institution = edu.get('institution', '')
-            area = edu.get('area', '')
-            study_type = edu.get('studyType', '')
-            start_date = format_date(edu.get('startDate', ''))
-            end_date = format_date(edu.get('endDate', ''))
-            score = edu.get('score', '')
-            
-            edu_text = f"<b>{institution}</b>"
-            if area:
-                edu_text += f"<br/>{area}"
-            if study_type:
-                edu_text += f"<br/>{study_type}"
-            if start_date and end_date:
-                edu_text += f"<br/>{start_date} - {end_date}"
-            if score:
-                edu_text += f" | GPA: {score}"
-            
-            story.append(Paragraph(edu_text, normal_style))
-            story.append(Spacer(1, 0.05*inch))
-        story.append(Spacer(1, 0.1*inch))
-    
-    # Work Experience
-    work = resume_data.get('work', [])
-    if work:
-        story.append(Paragraph("<b>Work Experience</b>", heading_style))
-        for job in work:
-            name = job.get('name', '')
-            position = job.get('position', '').replace('**', '')
-            start_date = format_date(job.get('startDate', ''))
-            end_date = format_date(job.get('endDate', ''))
-            summary = job.get('summary', '')
-            highlights = job.get('highlights', [])
+            degree_lines = f"<b>{edu.get('studyType', '')} in {edu.get('area', '')}</b><br/>{edu.get('institution', '')}"
+            period = f"{format_date(edu.get('startDate', ''))} – {format_date(edu.get('endDate', ''))}"
+            score = edu.get('score', '') or '—'
+            rows.append([cell_para(degree_lines), cell_para(period), cell_para(score)])
+        styled_table(rows, [3.8*inch, 1.9*inch, 1.3*inch], header=True)
 
-            work_text = f"<b>{name}</b>"
-            if position:
-                work_text += f" | {position}"
-            if start_date and end_date:
-                work_text += f"<br/>{start_date} - {end_date}"
-            elif start_date:
-                work_text += f"<br/>{start_date} - Present"
-            
-            story.append(Paragraph(work_text, normal_style))
-            if summary:
-                story.append(Paragraph(summary, normal_style))
-            if highlights:
-                for highlight in highlights:
-                    if highlight and highlight.strip():
-                        story.append(Paragraph(f"• {highlight}", normal_style))
-            story.append(Spacer(1, 0.1*inch))
-        story.append(Spacer(1, 0.1*inch))
-    
+    # ------------------------------------------------------------------
     # Publications
-    publications = resume_data.get('publications', [])
+    # ------------------------------------------------------------------
+    publications = sorted_by_date(resume_data.get('publications', []), key='releaseDate')
     if publications:
-        story.append(Paragraph("<b>Publications</b>", heading_style))
+        section_heading('Publications')
+        rows = []
         for pub in publications:
-            name = pub.get('name', '')
-            publisher = pub.get('publisher', '')
-            release_date = format_date(pub.get('releaseDate', ''))
-            summary = pub.get('summary', '')
             authors = pub.get('authors', '').replace('Sunghyun Lee', '<b>Sunghyun Lee</b>')
-            url = pub.get('url', '')
-
-            pub_text = f"<b>{name}</b>"
-            if publisher:
-                pub_text += f" | {publisher}"
-            if release_date:
-                pub_text += f" ({release_date})"
+            block = f"<b>{pub.get('name', '')}</b><br/>{pub.get('publisher', '')} ({format_date(pub.get('releaseDate', ''))})"
             if authors:
-                pub_text += f"<br/>{authors}"
-            if summary:
-                pub_text += f"<br/>{summary}"
-            
-            story.append(Paragraph(pub_text, normal_style))
-            story.append(Spacer(1, 0.05*inch))
-        story.append(Spacer(1, 0.1*inch))
-    
-    # Projects
-    projects = resume_data.get('projects', [])
-    if projects:
-        story.append(Paragraph("<b>Projects</b>", heading_style))
-        for project in projects:
-            name = project.get('name', '')
-            summary = project.get('summary', '')
-            start_date = format_date(project.get('startDate', ''))
-            end_date = format_date(project.get('endDate', ''))
-            highlights = project.get('highlights', [])
-            
-            proj_text = f"<b>{name}</b>"
-            if start_date and end_date:
-                proj_text += f" ({start_date} - {end_date})"
-            elif start_date:
-                proj_text += f" ({start_date} - Present)"
-            
-            story.append(Paragraph(proj_text, normal_style))
-            if summary:
-                story.append(Paragraph(summary, normal_style))
-            if highlights:
-                for highlight in highlights:
-                    if highlight and highlight.strip():
-                        story.append(Paragraph(f"• {highlight}", normal_style))
-            story.append(Spacer(1, 0.1*inch))
-        story.append(Spacer(1, 0.1*inch))
-    
+                block += f"<br/>{authors}"
+            if pub.get('summary'):
+                block += f"<br/><i>{pub['summary']}</i>"
+            rows.append([cell_para(block)])
+        styled_table(rows, [PAGE_WIDTH])
+
+    # ------------------------------------------------------------------
+    # Work Experience
+    # ------------------------------------------------------------------
+    work = sorted_by_date(resume_data.get('work', []))
+    if work:
+        section_heading('Work Experience')
+        rows = []
+        for job in work:
+            position = job.get('position', '').replace('**', '')
+            block = f"<b>{job.get('name', '')}</b>"
+            if position:
+                block += f" — {position}"
+            if job.get('summary'):
+                block += f"<br/>{job['summary']}"
+            highlights = [h for h in job.get('highlights', []) if h and h.strip()]
+            for h in highlights:
+                block += f"<br/>• {h}"
+            period = f"{format_date(job.get('startDate', ''))} –<br/>{format_date(job.get('endDate', ''))}"
+            rows.append([cell_para(block), cell_para(period)])
+        styled_table(rows, [PAGE_WIDTH - 1.4*inch, 1.4*inch])
+
+    # ------------------------------------------------------------------
     # Awards
-    awards = resume_data.get('awards', [])
+    # ------------------------------------------------------------------
+    awards = sorted_by_date(resume_data.get('awards', []), key='date')
     if awards:
-        story.append(Paragraph("<b>Awards</b>", heading_style))
+        section_heading('Awards & Honors')
+        rows = [[cell_para('<b>Award</b>'), cell_para('<b>Awarder</b>'), cell_para('<b>Date</b>')]]
         for award in awards:
-            title = award.get('title', '')
-            date = format_date(award.get('date', ''))
-            awarder = award.get('awarder', '')
-            summary = award.get('summary', '')
-            
-            award_text = f"<b>{title}</b>"
-            if awarder:
-                award_text += f" | {awarder}"
-            if date:
-                award_text += f" ({date})"
-            if summary:
-                award_text += f"<br/>{summary}"
-            
-            story.append(Paragraph(award_text, normal_style))
-            story.append(Spacer(1, 0.05*inch))
-        story.append(Spacer(1, 0.1*inch))
-    
+            title_block = award.get('title', '')
+            if award.get('summary'):
+                title_block += f"<br/><i>{award['summary']}</i>"
+            rows.append([cell_para(title_block), cell_para(award.get('awarder', '')), cell_para(format_date(award.get('date', '')))])
+        styled_table(rows, [4.0*inch, 1.7*inch, 1.3*inch], header=True)
+
+    # ------------------------------------------------------------------
     # Skills
+    # ------------------------------------------------------------------
     skills = resume_data.get('skills', [])
     if skills:
-        story.append(Paragraph("<b>Skills</b>", heading_style))
+        section_heading('Skills')
+        rows = []
         for skill in skills:
-            name = skill.get('name', '')
-            keywords = skill.get('keywords', [])
-            
-            skill_text = f"<b>{name}</b>"
-            if keywords:
-                skill_text += f": {', '.join(keywords)}"
-            
-            story.append(Paragraph(skill_text, normal_style))
-            story.append(Spacer(1, 0.05*inch))
-        story.append(Spacer(1, 0.1*inch))
-    
+            keywords = ', '.join(skill.get('keywords', []))
+            rows.append([cell_para(f"<b>{skill.get('name', '')}</b>"), cell_para(keywords)])
+        styled_table(rows, [1.6*inch, PAGE_WIDTH - 1.6*inch])
+
+    # ------------------------------------------------------------------
     # Languages
+    # ------------------------------------------------------------------
     languages = resume_data.get('languages', [])
     if languages:
-        story.append(Paragraph("<b>Languages</b>", heading_style))
-        lang_list = []
+        section_heading('Languages')
+        rows = []
         for lang in languages:
-            language = lang.get('language', '')
-            fluency = lang.get('fluency', '')
-            if language and fluency:
-                lang_list.append(f"{language} ({fluency})")
-        if lang_list:
-            story.append(Paragraph(", ".join(lang_list), normal_style))
-            story.append(Spacer(1, 0.1*inch))
-    
+            if lang.get('language') and lang.get('fluency'):
+                rows.append([cell_para(f"<b>{lang['language']}</b>"), cell_para(lang['fluency'])])
+        if rows:
+            styled_table(rows, [1.6*inch, PAGE_WIDTH - 1.6*inch])
+
+    # ------------------------------------------------------------------
     # Certificates
-    certificates = resume_data.get('certificates', [])
+    # ------------------------------------------------------------------
+    certificates = [c for c in resume_data.get('certificates', []) if c.get('name') and c.get('name').strip()]
     if certificates:
-        filtered_certs = [c for c in certificates if c.get('name') and c.get('name').strip()]
-        if filtered_certs:
-            story.append(Paragraph("<b>Certificates</b>", heading_style))
-            for cert in filtered_certs:
-                name = cert.get('name', '')
-                issuer = cert.get('issuer', '')
-                date = format_date(cert.get('date', ''))
-                
-                cert_text = f"<b>{name}</b>"
-                if issuer:
-                    cert_text += f" | {issuer}"
-                if date:
-                    cert_text += f" ({date})"
-                
-                story.append(Paragraph(cert_text, normal_style))
-                story.append(Spacer(1, 0.05*inch))
-            story.append(Spacer(1, 0.1*inch))
-    
+        section_heading('Certificates')
+        rows = [[cell_para('<b>Certificate</b>'), cell_para('<b>Issuer</b>'), cell_para('<b>Date</b>')]]
+        for cert in certificates:
+            rows.append([cell_para(cert.get('name', '')), cell_para(cert.get('issuer', '')), cell_para(format_date(cert.get('date', '')))])
+        styled_table(rows, [4.0*inch, 1.7*inch, 1.3*inch], header=True)
+
+    # ------------------------------------------------------------------
+    # Projects
+    # ------------------------------------------------------------------
+    projects = sorted_by_date(resume_data.get('projects', []))
+    if projects:
+        section_heading('Projects')
+        rows = []
+        for project in projects:
+            block = f"<b>{project.get('name', '')}</b>"
+            if project.get('summary'):
+                block += f"<br/>{project['summary']}"
+            for h in [h for h in project.get('highlights', []) if h and h.strip()]:
+                block += f"<br/>• {h}"
+            period = f"{format_date(project.get('startDate', ''))} –<br/>{format_date(project.get('endDate', ''))}"
+            rows.append([cell_para(block), cell_para(period)])
+        styled_table(rows, [PAGE_WIDTH - 1.4*inch, 1.4*inch])
+
     # Build PDF
     doc.build(story)
     print(f"CV PDF successfully generated: {output_path}")
@@ -322,16 +316,15 @@ def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     json_path = os.path.join(script_dir, 'assets', 'json', 'resume.json')
     output_path = os.path.join(script_dir, 'assets', 'pdf', 'cv.pdf')
-    
+
     # Ensure output directory exists
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    
+
     # Load resume data
     resume_data = load_resume_data(json_path)
-    
+
     # Generate PDF
-    create_cv_pdf(resume_data, output_path)
+    create_cv_pdf(resume_data, output_path, script_dir)
 
 if __name__ == '__main__':
     main()
-
