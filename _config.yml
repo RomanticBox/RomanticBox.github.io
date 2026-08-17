@@ -303,6 +303,7 @@ filtered_bibtex_keywords: [
     altmetric,
     annotation,
     arxiv,
+    author_position,
     award,
     award_name,
     bibtex_show,

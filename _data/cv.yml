@@ -2,11 +2,17 @@
   type: map
   contents:
     - name: Full Name
-      value: Sunghyun Lee
+      value: Sunghyun Lee (이성현)
     - name: Date of Birth
       value: 19th December 2000
+    - name: Nationality
+      value: 🇰🇷 South Korea, 🇺🇸 United States (Dual Citizenship)
+    - name: Email
+      value: romanticbox@kaist.ac.kr, sunghyunlee.kaist@gmail.com
     - name: Languages
-      value: Korean (Native), English (Native), French (Intermediate), Japanese (Basic)
+      value: Korean (Native), English (Fluent, Full Professional Proficiency), French (Intermediate), Japanese (Basic)
+    - name: Summary
+      value: I am a Master's student at the Kim Jaechul Graduate School of AI, KAIST, advised by Professor Yong Man Ro. My research focuses on Multimodal AI and Computational Creativity.
 
 - title: Education
   type: time_table
@@ -38,19 +44,25 @@
         - Conducted research on sound symbolism and phonetic-semantic relationships
         - Implemented neural models for cross-linguistic analysis
         - Published findings in academic conferences and journals
-    - title: Machine Learning Engineer Intern
-      institution: KAI System, Pangyo, Republic of Korea
+    - title: Machine Learning Engineer & Research Assistant Intern
+      institution: KAI SYSTEM, Pangyo, Republic of Korea
       year: 2024.02. - 2025.02., 2025.08. - 2025.11.
       description:
-        - Patented a new method for real-time energy data management
-        - Developed and deployed machine learning models for real-time data processing
-        - Contributed to research on multimodal AI applications
-    - title: Internship
+        - Developed a Machine Learning pipeline for KFEMS (Korean Factory Energy Management System) handling sequential industrial data
+        - Built and experimented with AI pipelines using industrial data
+        - Patent registered in the Republic of Korea for a real-time energy data management method
+        - Copyright registration pending
+    - title: Research Assistant Intern
       institution: MindForge, Seoul, Republic of Korea
       year: 2023.12 - 2024.02.
       description:
         - Real-time 3D hand pose estimation model for HCI
         - Paper survey for 3D hand pose estimation
+    - title: Mandatory Military Service
+      institution: Republic of Korea Army
+      year: 2021.02. - 2022.08.
+      description:
+        - Completed mandatory military service in the Republic of Korea
     - title: Incoming M.S candidate
       institution: Korean Advanced Institute of Science and Technology (KAIST), Daejeon, Republic of Korea
       year: 2026.03. - 2028.02.

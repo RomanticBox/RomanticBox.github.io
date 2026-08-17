@@ -21,9 +21,19 @@
           <tr>
             <td></td>
             <td class="list-group-name">
-              <b>{{ content.reference }}</b>
+              {% if content.reference %}
+                <a href="{{ content.reference }}" target="_blank" rel="noopener noreferrer"
+                  ><b>{{ content.reference }}</b></a
+                >
+              {% endif %}
             </td>
           </tr>
+          {% if content.summary %}
+            <tr>
+              <td></td>
+              <td class="list-group-name" style="font-style: italic; font-weight: normal">{{ content.summary }}</td>
+            </tr>
+          {% endif %}
         </tbody>
       </table>
     </div>

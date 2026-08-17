@@ -59,6 +59,9 @@ on:
       - "!FAQ.md"
       - "!INSTALL.md"
       - "!README.md"
+  schedule:
+    # Weekly rebuild so Google Scholar citation badges on the publications page stay fresh
+    - cron: "0 0 * * 1"
   workflow_dispatch:
 
 permissions:
