@@ -72,8 +72,8 @@ collection: books
 >
 > -- 배정원(Bae Jeong-weon), 배정원의 사랑학 수업(Lecture on Love Studies by Bae Jeong-weon(translated)) (2023)
 
-## Books that I am reading, have read, or will read
-
-> I'm reading this!
+> Finished reading this.
 >
 > -- Carlo M. Cipolla (카를로 M. 치폴라), Clocks and Culture (시계와 문명) (2013)
+
+## Books that I am reading, have read, or will read

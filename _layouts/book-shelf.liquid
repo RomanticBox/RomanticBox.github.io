@@ -4,7 +4,7 @@ layout: page
 {{ content }}
 
 {% if page.collection and page.collection.size > 0 %}
-  {% assign collection = site[page.collection] %}
+  {% assign collection = site[page.collection] | sort: 'date' %}
   {% if collection and collection.size > 0 %}
     {% for item in collection reversed %}
       {% assign current_year = item.date | date: '%Y' %}

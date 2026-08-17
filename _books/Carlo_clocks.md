@@ -10,11 +10,11 @@ tags:
 buy_link: https://product.kyobobook.co.kr/detail/S000001542760
 date: 2026-02-28
 started: 2026-02-28
-finished:
+finished: 2026-02-28
 released: 2013
-stars:
+stars: 4.5
 goodreads_review: 3.82
-status: reading
+status: finished
 ---
 
 TODO

@@ -1,9 +1,9 @@
 ---
 layout: book-review
-title: 혼자 있고 싶은데 외로운 건 싫어 (Introvert: Dating in the Modern World)
+title: "혼자 있고 싶은데 외로운 건 싫어 (Introvert: Dating in the Modern World)"
 author: 피터 홀린스 (Peter Hollins)
 cover: assets/img/book_covers/Hollins_Introvert.jpg
-olid: cover # use Open Library ID to fetch cover (if no `cover` is provided)
+olid: # use Open Library ID to fetch cover (if no `cover` is provided)
 isbn: 1648765599 # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
 categories: Psychology, Self-help, Introversion, Relationship, Personal Development
 tags: []

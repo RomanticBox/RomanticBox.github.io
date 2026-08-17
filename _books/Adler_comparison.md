@@ -1,6 +1,6 @@
 ---
 layout: book-review
-title: 나는 왜 자꾸 비교하는가 (translated: Adler's Advice on Comparison and Inferiority)
+title: "나는 왜 자꾸 비교하는가 (translated: Adler's Advice on Comparison and Inferiority)"
 author: Alfred Adler(알프레드 아들러), 민유한(Yu-ha Min), 제이한(J-Han)
 cover: assets/img/book_covers/Adler_comparison.jfif
 olid: cover # use Open Library ID to fetch cover (if no `cover` is provided)
