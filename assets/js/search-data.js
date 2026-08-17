@@ -90,36 +90,11 @@ ninja.data = [{
             window.open("https://blog.naver.com/romantic_box", "_blank");
           
         },
-      },{id: "books-",
-          title: '',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/Adler_comparison/";
-            },},{id: "books-시계와-문명-clocks-and-culture",
-          title: '시계와 문명 (Clocks and Culture)',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/Carlo_clocks/";
-            },},{id: "books-",
-          title: '',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/Hollins_Introvert/";
-            },},{id: "books-no-exit",
+      },{id: "books-no-exit",
           title: 'No Exit',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/Sartre_No_exit/";
-            },},{id: "books-a-to-z-mysteries-the-zombie-zone",
-          title: 'A to Z mysteries - The Zombie Zone',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/Ron_Zombie/";
-            },},{id: "books-",
-          title: '',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/bae_love/";
             },},{id: "books-신지영-교수의-언어감수성-수업",
           title: '신지영 교수의 언어감수성 수업',
           description: "",
@@ -140,11 +115,36 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/yang_contradiction/";
+            },},{id: "books-배정원의-사랑학-수업-연애는-덧셈-섹스는-곱셈",
+          title: '배정원의 사랑학 수업: 연애는 덧셈, 섹스는 곱셈',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/bae_love/";
+            },},{id: "books-혼자-있고-싶은데-외로운-건-싫어-introvert-dating-in-the-modern-world",
+          title: '혼자 있고 싶은데 외로운 건 싫어 (Introvert: Dating in the Modern World)',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Hollins_Introvert/";
+            },},{id: "books-나는-왜-자꾸-비교하는가-translated-adler-39-s-advice-on-comparison-and-inferiority",
+          title: '나는 왜 자꾸 비교하는가 (translated: Adler&amp;#39;s Advice on Comparison and Inferiority)',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Adler_comparison/";
+            },},{id: "books-a-to-z-mysteries-the-zombie-zone",
+          title: 'A to Z mysteries - The Zombie Zone',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Ron_Zombie/";
             },},{id: "books-no-longer-human-인간실격-人間失格",
           title: 'No Longer Human (인간실격, 人間失格)',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/dazai_human/";
+            },},{id: "books-시계와-문명-clocks-and-culture",
+          title: '시계와 문명 (Clocks and Culture)',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Carlo_clocks/";
             },},{id: "news-master-s-degree-at-kaist-i-am-pleased-to-announce-my-admission-to-kaist-korean-advanced-institute-of-science-and-technology-for-a-master-s-degree-program-i-will-enroll-in-march-2026-at-the-kim-jaecheol-ai-graduate-school-김재철-ai-대학원-under-the-supervision-of-professor-ro-yong-man-i-am-delighted-to-join-ivy-lab-amp-amp-ivl-lab-as-a-new-member-furthermore-i-would-like-to-express-my-sincere-and-profound-gratitude-to-professor-yu-young-jae-seoul-national-university-for-supervising-and-supporting-all-research-activities-during-my-undergraduate-research-internship-period-all-my-participation-and-accomplishments-during-my-undergraduate-studies-would-not-have-been-possible-without-the-guidance-of-the-professor-and-the-members-of-the-mir-lab-see-you-in-daejeon",
           title: 'Master’s Degree at KAIST I am pleased to announce my admission to KAIST...',
           description: "",
