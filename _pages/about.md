@@ -101,29 +101,34 @@ I completed my undergraduate studies in Computer Science and French Language and
   .timeline-item.current .timeline-label {
     font-weight: 700;
   }
+  .timeline-sub {
+    font-size: 0.75rem;
+    color: var(--global-text-color-light);
+    white-space: nowrap;
+    margin-top: 0.1rem;
+  }
 </style>
 
 <div class="timeline-scroll">
   <div class="timeline-track">
     <div class="timeline-item">
       <div class="timeline-period">2016 – 2019</div>
-      <div class="timeline-label">Sejong International High School</div>
+      <div class="timeline-label">Sejong Global High School</div>
     </div>
     <div class="timeline-item">
-      <div class="timeline-period">2020 – 2021</div>
+      <div class="timeline-period">2020 – 2025</div>
       <div class="timeline-label">Yonsei University</div>
+      <div class="timeline-sub">(incl. Military Service, 2021 – 2022)</div>
     </div>
     <div class="timeline-item">
-      <div class="timeline-period">2021 – 2022</div>
-      <div class="timeline-label">Military Service</div>
+      <div class="timeline-period">2023 – 2024</div>
+      <div class="timeline-label">MindForge</div>
+      <div class="timeline-sub">Internship</div>
     </div>
     <div class="timeline-item">
-      <div class="timeline-period">2022 – 2025</div>
-      <div class="timeline-label">Yonsei University</div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-period">2025</div>
-      <div class="timeline-label">Company Internship</div>
+      <div class="timeline-period">2024 – 2025</div>
+      <div class="timeline-label">KAI System</div>
+      <div class="timeline-sub">Internship</div>
     </div>
     <div class="timeline-item current">
       <div class="timeline-period">2026 – Present</div>
