@@ -28,7 +28,15 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-## 👋 Hi, I'm Sunghyun Lee
+## 👋 About Me
+
+<div class="d-flex flex-wrap mb-3" style="gap: 0.5rem">
+  <a href="mailto:romanticbox@kaist.ac.kr" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-envelope"></i> E-mail</a>
+  <a href="https://github.com/RomanticBox" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fa-brands fa-github"></i> Github</a>
+  <a href="https://www.linkedin.com/in/leesunghyun" target="_blank" class="btn btn-outline-primary btn-sm"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+  <a href="https://scholar.google.com/citations?user=IZuASToAAAAJ&hl=en" target="_blank" class="btn btn-outline-primary btn-sm"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+  <a href="/cv/" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-file-pdf"></i> CV</a>
+</div>
 
 I'm a Master's student studying Multimodal AI at [KAIST](https://www.kaist.ac.kr/en/)'s [Kim Jaechul Graduate School of AI](https://gsai.kaist.ac.kr/), advised by [Professor Yong Man Ro](https://www.ivylab.kaist.ac.kr/ivylab-ivllab). My work explores **creativity**, **multimodality**, and **language** of AI, driven by two research questions:
 
@@ -38,8 +46,6 @@ I'm a Master's student studying Multimodal AI at [KAIST](https://www.kaist.ac.kr
 Motivated by these questions, I'm broadly interested in **Computational Linguistics**, **Multimodal AI**, **World Models**, **Computational Creativity**, and **AI for Human**.
 
 I completed my undergraduate studies in Computer Science and French Language and Literature at Yonsei University, graduating summa cum laude (top 3%).
-
-[E-mail](mailto:romanticbox@kaist.ac.kr) · [Github](https://github.com/RomanticBox) · [Google Scholar](https://scholar.google.com/citations?user=IZuASToAAAAJ&hl=en) · [CV](/cv/)
 
 ---
 
