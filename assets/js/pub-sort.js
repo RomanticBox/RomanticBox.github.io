@@ -10,6 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const sorters = {
     alphabetical: (a, b) => (getRow(a)?.dataset.title || "").localeCompare(getRow(b)?.dataset.title || ""),
     "author-position": (a, b) => parseInt(getRow(a)?.dataset.authorPosition || "999", 10) - parseInt(getRow(b)?.dataset.authorPosition || "999", 10),
+    venue: (a, b) => {
+      const va = getRow(a)?.dataset.venue || "";
+      const vb = getRow(b)?.dataset.venue || "";
+      if (va !== vb) return va.localeCompare(vb);
+      return parseInt(getRow(b)?.dataset.year || "0", 10) - parseInt(getRow(a)?.dataset.year || "0", 10);
+    },
   };
 
   const flattenAndSort = (compareFn) => {

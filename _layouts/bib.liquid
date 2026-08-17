@@ -1,10 +1,12 @@
 ---
 ---
+{% assign venue_clean = entry.abbr | split: "' " | last %}
 <div
   class="row"
   data-year="{{ entry.year }}"
   data-title="{{ entry.title | strip_html | escape }}"
   data-author-position="{{ entry.author_position | default: 999 }}"
+  data-venue="{{ venue_clean | default: entry.journal | escape }}"
 >
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">

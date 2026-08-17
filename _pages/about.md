@@ -129,12 +129,12 @@ I completed my undergraduate studies in Computer Science and French Language and
     <div class="timeline-item">
       <div class="timeline-period">2023 – 2024</div>
       <div class="timeline-label">MindForge</div>
-      <div class="timeline-sub">Internship</div>
+      <div class="timeline-sub">Internship (2mo)</div>
     </div>
     <div class="timeline-item">
       <div class="timeline-period">2024 – 2025</div>
       <div class="timeline-label">KAI System</div>
-      <div class="timeline-sub">Internship</div>
+      <div class="timeline-sub">Internship (15mo)</div>
     </div>
     <div class="timeline-item current">
       <div class="timeline-period">2026 – Present</div>
