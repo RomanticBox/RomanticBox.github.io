@@ -30,16 +30,16 @@ latest_posts:
 
 ## 👋 Hi, I'm Sunghyun Lee
 
-I'm a Multimodal AI researcher and Master's student at [KAIST](https://www.kaist.ac.kr/en/)'s [Kim Jaechul Graduate School of AI](https://gsai.kaist.ac.kr/), advised by [Professor Yong Man Ro](https://www.ivylab.kaist.ac.kr/ivylab-ivllab). My work explores AI creativity, multimodality, and language, driven by two research questions:
+I'm a Master's student studying Multimodal AI at [KAIST](https://www.kaist.ac.kr/en/)'s [Kim Jaechul Graduate School of AI](https://gsai.kaist.ac.kr/), advised by [Professor Yong Man Ro](https://www.ivylab.kaist.ac.kr/ivylab-ivllab). My work explores **creativity**, **multimodality**, and **language** of AI, driven by two research questions:
 
-- How can AI understand and support human communication and mental health in everyday life?
-- How can AI understand and support human productive activities?
+- How can we make AI unveil the **complex and tacit context of human communication**, and use it to assist human life?
+- How can we make AI assist **humans' productive and creative activities**, ultimately making human life safer, happier, and more convenient?
 
-I'm broadly interested in **Computational Linguistics**, **Multimodal AI**, **World Models**, **Computational Creativity**, and **AI for Human**.
+Motivated by these questions, I'm broadly interested in **Computational Linguistics**, **Multimodal AI**, **World Models**, **Computational Creativity**, and **AI for Human**.
 
-I majored in Computer Science and French Language and Literature at Yonsei University, graduating as summa cum laude (top 3%).
+I completed my undergraduate studies in Computer Science and French Language and Literature at Yonsei University, graduating summa cum laude (top 3%).
 
-Check out my [CV](/cv/) for more details.
+Check out my [**CV**](/cv/) for more details.
 
 ---
 
@@ -48,7 +48,7 @@ Check out my [CV](/cv/) for more details.
 - **Computational Linguistics**
   (Multilinguality, Pragmatics, Phonetics)
 - **Multimodal AI**
-  (Multimodal Communication Pragmatics — e.g., Human Motion; Theory of Mind)
+  (Human Motion, Theory of Mind, Multimodal Communication, etc.)
 - **World Models**
 - **Computational Creativity**
 - **AI for Human**
