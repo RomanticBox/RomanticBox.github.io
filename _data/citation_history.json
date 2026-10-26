@@ -1,5 +1,33 @@
 {
-  "SoundSymbolism": [{ "date": "2026-08-17", "count": 5, "source": "manual" }],
-  "SpeakBeyondLanguage": [{ "date": "2026-08-17", "count": 6, "source": "manual" }],
-  "MAVL": [{ "date": "2026-08-17", "count": 3, "source": "manual" }]
+  "SoundSymbolism": [
+    {
+      "date": "2026-08-17",
+      "count": 5,
+      "source": "manual"
+    },
+    {
+      "date": "2026-10-26",
+      "count": 6,
+      "source": "scraped"
+    }
+  ],
+  "SpeakBeyondLanguage": [
+    {
+      "date": "2026-08-17",
+      "count": 6,
+      "source": "manual"
+    },
+    {
+      "date": "2026-10-26",
+      "count": 8,
+      "source": "scraped"
+    }
+  ],
+  "MAVL": [
+    {
+      "date": "2026-08-17",
+      "count": 3,
+      "source": "manual"
+    }
+  ]
 }
